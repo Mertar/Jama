@@ -1,0 +1,2172 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Jama",
+				"abbreviation": "J",
+				"full": "Jama",
+				"url": "",
+				"authors": [
+					"Me"
+				],
+				"convertedBy": []
+			}
+		],
+		"dateAdded": 1689544556,
+		"dateLastModified": 1689544556
+	},
+	"monster": [
+		{
+			"name": "Ekxus",
+			"shortName": true,
+			"isNpc": true,
+			"source": "Jama",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "tiefling",
+						"prefix": "Dispater"
+					}
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"Studded leather armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 75
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 20,
+			"dex": 20,
+			"con": 16,
+			"int": 13,
+			"wis": 12,
+			"cha": 15,
+			"save": {
+				"dex": "+7",
+				"str": "+7"
+			},
+			"skill": {
+				"acrobatics": "+10",
+				"athletics": "+10",
+				"deception": "+5",
+				"insight": "+4",
+				"performance": "+8",
+				"sleight of hand": "+7",
+				"stealth": "+7",
+				"persuasion": "+5",
+				"intimidation": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"fire"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"{@dc 13} Dispater tiefling"
+					],
+					"daily": {
+						"1e": [
+							"{@spell detect thoughts}",
+							"{@spell disguise self}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell thaumaturgy}"
+							]
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Axe master",
+					"entries": [
+						"Ekxes adds {@dice 1d6} to all damage he does using axes and can draw any number of them in a turn."
+					]
+				},
+				{
+					"name": "Nimble",
+					"entries": [
+						"Opportunity attacks against Ekxus are made with disadvantage."
+					]
+				},
+				{
+					"name": "Sure-Footed",
+					"entries": [
+						"Ekxus has advantage on Strength and Dexterity saving throws made against effects that would knock him {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Ekxus makes 3 Hand axe attacks"
+					]
+				},
+				{
+					"name": "Hand axe",
+					"entries": [
+						"{@atk mw,rw} {@hit 8} to hit, reach 5 ft. or range 60/60 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage in melee, or 12 ({@damage 2d6 + 5}) slashing damage at range."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"RW",
+				"MW"
+			],
+			"spellcastingTags": [
+				"O"
+			]
+		},
+		{
+			"name": "Kuo-toa",
+			"source": "Jama",
+			"page": 199,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"kuo-toa"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8",
+				"average": 26
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 11,
+			"int": 11,
+			"wis": 10,
+			"cha": 8,
+			"skill": {
+				"perception": "+2",
+				"stealth": "+2"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Undercommon"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The kuo-toa can breathe air and water."
+					]
+				},
+				{
+					"name": "Otherworldly Perception",
+					"entries": [
+						"The kuo-toa can sense the presence of any creature within 30 feet of it that is {@condition invisible} or on the Ethereal Plane. It can pinpoint such a creature that is moving."
+					]
+				},
+				{
+					"name": "Slippery",
+					"entries": [
+						"The kuo-toa has advantage on ability checks and saving throws made to escape a grapple."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Water Camouflage",
+					"entries": [
+						"Kuo-Toa have advantage on stealth checks made under water."
+					]
+				},
+				{
+					"name": "Linked Telepathy",
+					"entries": [
+						"All cultists of Igthuun can communicate telepathically with each other within 100ft range"
+					]
+				},
+				{
+					"name": "Psychic Shielding",
+					"entries": [
+						"All cultists of Igthuun have immunity to psychic damage and advantage on all Wisdom, Charisma and Intelligence saving throws"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Spear (3x)",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d6 + 2}) piercing damage, or 5 ({@damage 1d8 + 2}) piercing damage if used with two hands to make a melee attack."
+					]
+				},
+				{
+					"name": "Net",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 10/20 ft., one Large or smaller creature. {@h}The target is {@condition restrained}. A creature can use its action to make a {@dc 10} Strength check to free itself or another creature in a net, ending the effect on a success. Dealing 5 slashing damage to the net (AC 10) frees the target without harming it and destroys the net."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"fluff": {
+				"name": "Kuo-toa",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Kuo-toa are degenerate fishlike humanoids that once inhabited the shores and islands of the surface world. Long ago humans and their ilk drove the kuo-toa underground, where they dwell in madness and everlasting night. Kuo-toa can no longer abide daylight.",
+									{
+										"name": "Mad Slaves",
+										"type": "entries",
+										"entries": [
+											"At the height of the illithid empire, the mind flayers captured kuo-toa by the thousands and forced them into bondage. The kuo-toa were simple creatures, never meant to endure the oppressive mental force the illithids unleashed against them. By the time the mind flayers abandoned them, the prolonged psychic subjugation endured by the kuo-toa had driven them mad.",
+											"Their minds shattered beyond repair, the kuo-toa adopted a religious fervor, inventing gods to protect them against threats. Most notable of these threats are the drow, which have slain the kuo-toa on sight since the days when the two races first met."
+										]
+									},
+									{
+										"name": "God Makers",
+										"type": "entries",
+										"entries": [
+											"Kuo-toa worship gods of their own insane creation, but if enough kuo-toa believe that a god is real, the energy of their collective subconscious can cause that god to manifest as a physical entity. The form a kuo-toa god takes depends on the inspiration for its divine image, and is usually random or nonsensical.",
+											"One of the most revered gods of the kuo-toa is Blibdoolpoolp the Sea Mother, who takes the form of a female human with a crayfish head, a crayfish's claws, and an articulated shell covering her shoulders. Blibdoolpoolp was likely invented by a kuo-toa that improved on a broken human statue by adding the limbs and head of a crustacean. In sudden awe of its handiwork, it then named the resulting form a god.",
+											"Kuo-toa that cross paths with an aboleth often find themselves worshiping it as a god, their madness blinding them to the fact that the aboleth is merely using them for its own nefarious ends."
+										]
+									},
+									{
+										"name": "Theocratic Rulers",
+										"type": "entries",
+										"entries": [
+											"Kuo-toa archpriests are surrounded by fanatical devotees of their faith. The archpriest of a kuo-toa domain demands that all its subjects worship a specific god. An archpriest's mad belief in its god is so fervent that it manifests the powers of a high cleric. The archpriest can also bestow spells to devout underlings called whips. One or more of these whips are also the archpriest's children, and their primary role in kuo-toan society is to fight to the death to claim the throne when the archpriest dies. If a whip displeases the archpriest, the archpriest can strip it of its spellcasting ability, if not its life.",
+											"The archpriest's decrees are enforced by monitors, devout kuo-toa that act as the archpriest's eyes and ears. Monitors are deadly hand-to-hand combatants, and lesser kuo-toa live in fear of them.",
+											"Kuo-toa Gear. Many weapons of the kuo-toa are designed to capture rather than kill. Nets are common, though some carry pincer staffs (also called mancatchers) designed to trap and immobilize foes. Kuo-toa warriors also treat their shields with a sticky goo that catches incoming weapons.",
+											"In general, kuo-toa don't like the weight of armor on their slippery bodies and rely on their natural rubbery hides for protection. However, they like to wear jewelry made from scavenged bones, shells, pearls, gems, and carapace fragments."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Variant: Kuo-toa Monitor",
+										"entries": [
+											"A kuo-toa monitor has a challenge rating of 3 (700 XP). It has the same statistics as a kuo-toa whip except that it adds its Wisdom modifier to its Armor Class (AC 13), loses the Spellcaster trait, and replaces the whip's action options with the following action options.",
+											{
+												"name": "Multiattack",
+												"entries": [
+													"The kuo-toa makes one bite attack and two unarmed strikes."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Bite",
+												"entries": [
+													"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 4 ({@damage 1d4 + 2}) piercing damage."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Unarmed Strike",
+												"entries": [
+													"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 ({@damage 1d6 + 2}) bludgeoning damage + 3 ({@damage 1d6}) lightning damage, and the target can't take reactions until the end of the kuo-toa's next turn."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "insetReadaloud",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"They invent their own gods... the very definition of insanity."
+										],
+										"by": "Sabal Mizzrym of Menzoberranzan"
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Kuo-toa.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Kuo-toa.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/kuo-toa.mp3"
+			},
+			"traitTags": [
+				"Amphibious",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"U"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"MLW",
+				"THW"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"attachedItems": [
+				"net|phb",
+				"spear|phb"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Kuo-toa Guardian",
+			"source": "Jama",
+			"page": 199,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"kuo-toa"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"makeshift armor",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d10 + 4",
+				"average": 36
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 13,
+			"int": 11,
+			"wis": 10,
+			"cha": 8,
+			"skill": {
+				"perception": "+2"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"psychic"
+			],
+			"languages": [
+				"Undercommon"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The kuo-toa can breathe air and water."
+					]
+				},
+				{
+					"name": "Otherworldly Perception",
+					"entries": [
+						"The kuo-toa can sense the presence of any creature within 30 feet of it that is {@condition invisible} or on the Ethereal Plane. It can pinpoint such a creature that is moving."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Water Camouflage",
+					"entries": [
+						"Kuo-Toa have advantage on stealth checks made under water."
+					]
+				},
+				{
+					"name": "Linked Telepathy",
+					"entries": [
+						"All cultists of Igthuun can communicate telepathically with each other within 100ft range"
+					]
+				},
+				{
+					"name": "Psychic Shielding",
+					"entries": [
+						"All cultists of Igthuun have immunity to psychic damage and advantage on all Wisdom, Charisma and Intelligence saving throws"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Kuo-Toa Guardian makes two attacks"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Jagged Sword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Sticky Shield",
+					"entries": [
+						"When a creature misses the kuo-toa with a melee weapon attack, the kuo-toa uses its sticky shield to catch the weapon. The attacker must succeed on a {@dc 13} Strength saving throw, or the weapon becomes stuck to the kuo-toa's shield. If the weapon's wielder can't or won't let go of the weapon, the wielder is {@condition grappled} while the weapon is stuck. While stuck, the weapon can't be used. A creature can pull the weapon free by taking an action to make a {@dc 13} Strength check and succeeding."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"fluff": {
+				"name": "Kuo-toa",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Kuo-toa are degenerate fishlike humanoids that once inhabited the shores and islands of the surface world. Long ago humans and their ilk drove the kuo-toa underground, where they dwell in madness and everlasting night. Kuo-toa can no longer abide daylight.",
+									{
+										"name": "Mad Slaves",
+										"type": "entries",
+										"entries": [
+											"At the height of the illithid empire, the mind flayers captured kuo-toa by the thousands and forced them into bondage. The kuo-toa were simple creatures, never meant to endure the oppressive mental force the illithids unleashed against them. By the time the mind flayers abandoned them, the prolonged psychic subjugation endured by the kuo-toa had driven them mad.",
+											"Their minds shattered beyond repair, the kuo-toa adopted a religious fervor, inventing gods to protect them against threats. Most notable of these threats are the drow, which have slain the kuo-toa on sight since the days when the two races first met."
+										]
+									},
+									{
+										"name": "God Makers",
+										"type": "entries",
+										"entries": [
+											"Kuo-toa worship gods of their own insane creation, but if enough kuo-toa believe that a god is real, the energy of their collective subconscious can cause that god to manifest as a physical entity. The form a kuo-toa god takes depends on the inspiration for its divine image, and is usually random or nonsensical.",
+											"One of the most revered gods of the kuo-toa is Blibdoolpoolp the Sea Mother, who takes the form of a female human with a crayfish head, a crayfish's claws, and an articulated shell covering her shoulders. Blibdoolpoolp was likely invented by a kuo-toa that improved on a broken human statue by adding the limbs and head of a crustacean. In sudden awe of its handiwork, it then named the resulting form a god.",
+											"Kuo-toa that cross paths with an aboleth often find themselves worshiping it as a god, their madness blinding them to the fact that the aboleth is merely using them for its own nefarious ends."
+										]
+									},
+									{
+										"name": "Theocratic Rulers",
+										"type": "entries",
+										"entries": [
+											"Kuo-toa archpriests are surrounded by fanatical devotees of their faith. The archpriest of a kuo-toa domain demands that all its subjects worship a specific god. An archpriest's mad belief in its god is so fervent that it manifests the powers of a high cleric. The archpriest can also bestow spells to devout underlings called whips. One or more of these whips are also the archpriest's children, and their primary role in kuo-toan society is to fight to the death to claim the throne when the archpriest dies. If a whip displeases the archpriest, the archpriest can strip it of its spellcasting ability, if not its life.",
+											"The archpriest's decrees are enforced by monitors, devout kuo-toa that act as the archpriest's eyes and ears. Monitors are deadly hand-to-hand combatants, and lesser kuo-toa live in fear of them.",
+											"Kuo-toa Gear. Many weapons of the kuo-toa are designed to capture rather than kill. Nets are common, though some carry pincer staffs (also called mancatchers) designed to trap and immobilize foes. Kuo-toa warriors also treat their shields with a sticky goo that catches incoming weapons.",
+											"In general, kuo-toa don't like the weight of armor on their slippery bodies and rely on their natural rubbery hides for protection. However, they like to wear jewelry made from scavenged bones, shells, pearls, gems, and carapace fragments."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Variant: Kuo-toa Monitor",
+										"entries": [
+											"A kuo-toa monitor has a challenge rating of 3 (700 XP). It has the same statistics as a kuo-toa whip except that it adds its Wisdom modifier to its Armor Class (AC 13), loses the Spellcaster trait, and replaces the whip's action options with the following action options.",
+											{
+												"name": "Multiattack",
+												"entries": [
+													"The kuo-toa makes one bite attack and two unarmed strikes."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Bite",
+												"entries": [
+													"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 4 ({@damage 1d4 + 2}) piercing damage."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Unarmed Strike",
+												"entries": [
+													"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 ({@damage 1d6 + 2}) bludgeoning damage + 3 ({@damage 1d6}) lightning damage, and the target can't take reactions until the end of the kuo-toa's next turn."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "insetReadaloud",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"They invent their own gods... the very definition of insanity."
+										],
+										"by": "Sabal Mizzrym of Menzoberranzan"
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Kuo-toa.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Kuo-toa.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/kuo-toa.mp3"
+			},
+			"traitTags": [
+				"Amphibious",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"U"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"damageTags": [
+				"P"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Carlayla",
+			"source": "Jama",
+			"page": 59,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 60,
+				"formula": "8d8 + 24"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 18,
+			"con": 16,
+			"int": 10,
+			"wis": 13,
+			"cha": 20,
+			"save": {
+				"dex": "+7",
+				"wis": "+4"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"perception": "+4",
+				"performance": "+8",
+				"deception": "+11",
+				"stealth": "+7",
+				"persuasion": "+11"
+			},
+			"passive": 14,
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The bard casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 14}):"
+					],
+					"will": [
+						"{@spell dancing lights}",
+						"{@spell mage hand}",
+						"{@spell prestidigitation}",
+						"{@spell vicious mockery} (2d4)"
+					],
+					"daily": {
+						"1e": [
+							"{@spell charm person}",
+							"{@spell fear}",
+							"{@spell hold person}",
+							"{@spell invisibility}",
+							"{@spell sleep}",
+							"{@spell tongues}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The bard makes two Shortsword or Shortbow attacks. It can replace one attack with a use of Spellcasting."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Cacophony {@recharge 4}",
+					"entries": [
+						"Each creature in a 15-foot cube originating from the bard must make a {@dc 16} Constitution saving throw. On a failed save, a creature takes 18 ({@damage 4d8}) thunder damage and is pushed up to 10 feet away from the bard. On a successful save, a creature takes half as much damage and isn't pushed."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Placate (2/Day)",
+					"entries": [
+						"The bard targets one creature within 30 feet of it. If the target can hear the bard, the target must succeed on a {@dc 16} Charisma saving throw or have disadvantage on ability checks, attack rolls, and saving throws until the start of the bard's next turn."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/bard.mp3"
+			},
+			"attachedItems": [
+				"shortsword|phb"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"spellcastingTags": [
+				"CB"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"AOE"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"invisible",
+				"unconscious"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MPMM/Bard.png",
+			"fluff": {
+				"name": "Bard",
+				"source": "MPMM",
+				"entries": [
+					"Bards are gifted poets, storytellers, and entertainers who travel far and wide. They're commonly found in taverns or in the company of jolly bands of adventurers, rough-and-tumble mercenaries, and wealthy patrons.",
+					"Each bard is a master of at least one type of performance. You may choose a bard's main type, or you may roll on the Bard {@skill Performance} Types table to determine it.",
+					{
+						"type": "table",
+						"caption": "Bard Performance Types",
+						"colLabels": [
+							"d10",
+							"Performance Type"
+						],
+						"colStyles": [
+							"col-1 text-center",
+							"col-11"
+						],
+						"rows": [
+							[
+								"1",
+								"Poetry"
+							],
+							[
+								"2",
+								"Singing"
+							],
+							[
+								"3",
+								"Bagpipe"
+							],
+							[
+								"4",
+								"Flute"
+							],
+							[
+								"5",
+								"Dancing"
+							],
+							[
+								"6",
+								"Drum"
+							],
+							[
+								"7",
+								"Lute"
+							],
+							[
+								"8",
+								"Puppetry"
+							],
+							[
+								"9",
+								"Mime"
+							],
+							[
+								"10",
+								"Acting"
+							]
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MPMM/Bard.webp"
+						}
+					}
+				]
+			},
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"P",
+				"T"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Sin Haku",
+			"source": "Jama",
+			"page": 343,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"yuan-ti"
+				]
+			},
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 90,
+				"formula": "12d8 + 36"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 20,
+			"con": 16,
+			"int": 13,
+			"wis": 11,
+			"cha": 10,
+			"save": {
+				"dex": "+9",
+				"int": "+5",
+				"wis": "+4"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"perception": "+4",
+				"stealth": "+13",
+				"deception": "+4",
+				"arcana": "+5",
+				"sleight of hand": "+13"
+			},
+			"passive": 14,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"Thieves' cant",
+				"Common",
+				"Draconic"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Assassinate",
+					"entries": [
+						"During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a {@quickref Surprise|PHB|3|0|surprised} creature is a critical hit."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"The assassin deals an extra 31 ({@dice 5d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't {@condition incapacitated} and the assassin doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The sin haku has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The assassin makes two shortsword attacks."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 24 ({@damage 7d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Light Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 24 ({@damage 7d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/assassin.mp3"
+			},
+			"attachedItems": [
+				"light crossbow|phb",
+				"shortsword|phb"
+			],
+			"traitTags": [
+				"Magic Resistance",
+				"Sneak Attack"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TC",
+				"C",
+				"DR"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Assassin.png",
+			"fluff": {
+				"name": "Assassin",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Assassin.webp"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Jumping Spider",
+			"source": "Jama",
+			"page": 151,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d12 + 4",
+				"average": 30
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 12,
+			"int": 6,
+			"wis": 12,
+			"cha": 4,
+			"skill": {
+				"stealth": "+4",
+				"acrobatics": "+2"
+			},
+			"senses": [
+				"tremorsense 60 ft."
+			],
+			"passive": 11,
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The deep spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Sense",
+					"entries": [
+						"While in contact with a web, the deep spider knows the exact location of any other creature in contact with the same web."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The deep spider ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The deep spider makes two foreleg attacks and one bite attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 3}) piercing damage, and the target must make a {@dc 12} Constitution saving throw, taking 9 ({@damage 2d8}) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way."
+					]
+				},
+				{
+					"name": "Foreleg",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 3}) slashing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Sense",
+				"Web Walker"
+			],
+			"senseTags": [
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"poisoned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MaBJoV/Deep Spider.png",
+			"fluff": {
+				"name": "Deep Spider",
+				"source": "MaBJoV",
+				"entries": [
+					"Sword spiders are a type of giant arachnid that stalk the forests and caverns of Faerûn, walking on legs that resemble razor-sharp blades. These solitary predators move incredibly fast and with great stealth for their large size. The sword spider's sleek, 12-foot-long body is encased in a durable black exoskeleton covered in fine dark hairs. Although their eyesight is poor, sword spiders locate their prey using {@sense tremorsense|MM} to feel for minute vibrations in the ground.",
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Natural Weapons",
+										"entries": [
+											"All eight legs of a sword spider end in thick chitinous plates with serrated ridges. However, its primary weapons are its front two legs, which look like a pair of massive curved swords. Its victims are impaled upon these limbs and brought close enough for the spider to deliver its poisonous bite. Once slain, its prey is then chopped up into manageable morsels that can be fed into its cavernous maw lined with multiple rows of crooked fangs."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Death From Above",
+										"entries": [
+											"Rather than trapping its food within a pre-constructed web, sword spiders prefer to wait for prey high up in tree branches and on cavern walls. (Despite their large frames, sword spiders retain the ability to cling to most surfaces, making them adept climbers.) Once it spots its prey, the spider sprays the creature with a restraining web and drops down with all eight of its lethal legs extended to impale its meal. When hunting in areas not conducive to this strategy, sword spiders instead stalk and chase their prey like big cats and are able to leap forward up to 30 feet, lashing out with their forelimbs."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Deep Spiders",
+										"entries": [
+											"Sword spiders are native to the jungles of Mhair on the Chultan Peninsula in southwest Faerûn. Drow traders brought them to the Underdark where they were bred for use in battle under the control of Lolthite priestesses. These variants are called deep spiders and many have since escaped their pens and, with the ability to tolerate a wide range of climates, adapted quickly to their new subterranean homes. These creatures soon spread throughout the Underdark with many finding their way to the surface."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MaBJoV/Sword Spider.webp"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"I",
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Kuo-toa Priest of the Deep",
+			"source": "Jama",
+			"page": 199,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"kuo-toa"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "5d8"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 11,
+			"int": 11,
+			"wis": 14,
+			"cha": 8,
+			"skill": {
+				"perception": "+4",
+				"stealth": "+2"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"Undercommon"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The kuo-toa can breathe air and water."
+					]
+				},
+				{
+					"name": "Otherworldly Perception",
+					"entries": [
+						"The kuo-toa can sense the presence of any creature within 30 feet of it that is {@condition invisible} or on the Ethereal Plane. It can pinpoint such a creature that is moving."
+					]
+				},
+				{
+					"name": "Slippery",
+					"entries": [
+						"The kuo-toa has advantage on ability checks and saving throws made to escape a grapple."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Water Camouflage",
+					"entries": [
+						"Kuo-Toa have advantage on stealth checks made under water."
+					]
+				},
+				{
+					"name": "Cultist of Igthuun - Linked Telepathy",
+					"entries": [
+						"All cultists of Igthuun can communicate telepathically with each other within 100ft range"
+					]
+				},
+				{
+					"name": "Cultist of Igthuun - Psychic Shielding",
+					"entries": [
+						"All cultists of Igthuun have immunity to psychic damage and advantage on all Wisdom, Charisma and Intelligence saving throws"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Psychic bolt",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 60/60 ft., one target 10 ({@damage 2d6}) psychic damage at range. If there are at least 6 allies within 60 feat the damage is increased to 21 ({@damage 4d6})"
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"fluff": {
+				"name": "Kuo-toa",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Kuo-toa are degenerate fishlike humanoids that once inhabited the shores and islands of the surface world. Long ago humans and their ilk drove the kuo-toa underground, where they dwell in madness and everlasting night. Kuo-toa can no longer abide daylight.",
+									{
+										"name": "Mad Slaves",
+										"type": "entries",
+										"entries": [
+											"At the height of the illithid empire, the mind flayers captured kuo-toa by the thousands and forced them into bondage. The kuo-toa were simple creatures, never meant to endure the oppressive mental force the illithids unleashed against them. By the time the mind flayers abandoned them, the prolonged psychic subjugation endured by the kuo-toa had driven them mad.",
+											"Their minds shattered beyond repair, the kuo-toa adopted a religious fervor, inventing gods to protect them against threats. Most notable of these threats are the drow, which have slain the kuo-toa on sight since the days when the two races first met."
+										]
+									},
+									{
+										"name": "God Makers",
+										"type": "entries",
+										"entries": [
+											"Kuo-toa worship gods of their own insane creation, but if enough kuo-toa believe that a god is real, the energy of their collective subconscious can cause that god to manifest as a physical entity. The form a kuo-toa god takes depends on the inspiration for its divine image, and is usually random or nonsensical.",
+											"One of the most revered gods of the kuo-toa is Blibdoolpoolp the Sea Mother, who takes the form of a female human with a crayfish head, a crayfish's claws, and an articulated shell covering her shoulders. Blibdoolpoolp was likely invented by a kuo-toa that improved on a broken human statue by adding the limbs and head of a crustacean. In sudden awe of its handiwork, it then named the resulting form a god.",
+											"Kuo-toa that cross paths with an aboleth often find themselves worshiping it as a god, their madness blinding them to the fact that the aboleth is merely using them for its own nefarious ends."
+										]
+									},
+									{
+										"name": "Theocratic Rulers",
+										"type": "entries",
+										"entries": [
+											"Kuo-toa archpriests are surrounded by fanatical devotees of their faith. The archpriest of a kuo-toa domain demands that all its subjects worship a specific god. An archpriest's mad belief in its god is so fervent that it manifests the powers of a high cleric. The archpriest can also bestow spells to devout underlings called whips. One or more of these whips are also the archpriest's children, and their primary role in kuo-toan society is to fight to the death to claim the throne when the archpriest dies. If a whip displeases the archpriest, the archpriest can strip it of its spellcasting ability, if not its life.",
+											"The archpriest's decrees are enforced by monitors, devout kuo-toa that act as the archpriest's eyes and ears. Monitors are deadly hand-to-hand combatants, and lesser kuo-toa live in fear of them.",
+											"Kuo-toa Gear. Many weapons of the kuo-toa are designed to capture rather than kill. Nets are common, though some carry pincer staffs (also called mancatchers) designed to trap and immobilize foes. Kuo-toa warriors also treat their shields with a sticky goo that catches incoming weapons.",
+											"In general, kuo-toa don't like the weight of armor on their slippery bodies and rely on their natural rubbery hides for protection. However, they like to wear jewelry made from scavenged bones, shells, pearls, gems, and carapace fragments."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Variant: Kuo-toa Monitor",
+										"entries": [
+											"A kuo-toa monitor has a challenge rating of 3 (700 XP). It has the same statistics as a kuo-toa whip except that it adds its Wisdom modifier to its Armor Class (AC 13), loses the Spellcaster trait, and replaces the whip's action options with the following action options.",
+											{
+												"name": "Multiattack",
+												"entries": [
+													"The kuo-toa makes one bite attack and two unarmed strikes."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Bite",
+												"entries": [
+													"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 4 ({@damage 1d4 + 2}) piercing damage."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Unarmed Strike",
+												"entries": [
+													"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 ({@damage 1d6 + 2}) bludgeoning damage + 3 ({@damage 1d6}) lightning damage, and the target can't take reactions until the end of the kuo-toa's next turn."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "insetReadaloud",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"They invent their own gods... the very definition of insanity."
+										],
+										"by": "Sabal Mizzrym of Menzoberranzan"
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Kuo-toa.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Kuo-toa.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/kuo-toa.mp3"
+			},
+			"traitTags": [
+				"Amphibious",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"U"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"reaction": [
+				{
+					"name": "Otherwordly influnce",
+					"entries": [
+						"As a reaction the priest makes an attack miss or counters a spell with level under {@dice 1d6}. They cant perform this action if there are not at least 3 allies within 60ft. If there are 6 or more allies the dice increase to {@dice 2d6}."
+					]
+				}
+			],
+			"damageTags": [
+				"P",
+				"Y"
+			]
+		},
+		{
+			"name": "Rivermaw Brawler",
+			"shortName": "brawler",
+			"group": [
+				"Rivermaw Herd"
+			],
+			"source": "Jama",
+			"page": 254,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any"
+				]
+			},
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"average": 65,
+				"formula": "10d8 + 20"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 17,
+			"dex": 14,
+			"con": 15,
+			"int": 14,
+			"wis": 16,
+			"cha": 8,
+			"save": {
+				"str": "+5",
+				"wis": "+5"
+			},
+			"skill": {
+				"acrobatics": "+4",
+				"athletics": "+5",
+				"perception": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"Common",
+				"Giant"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Unarmored Defense (Scales)",
+					"entries": [
+						"While the brawler is wearing no armor and wielding no {@item shield|PHB}, its AC equal to 13+its constitution modifier"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The brawler makes three unarmed strikes."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage. If the target is a Large or smaller creature, the brawler can choose one of the following additional effects:",
+						{
+							"type": "list",
+							"items": [
+								{
+									"name": "Bruise",
+									"type": "item",
+									"entries": [
+										"The target must succeed on a {@dc 13} Constitution {@quickref saving throws|PHB|2|1|saving throw}. On a failure, its speed is reduced by 5 feet until it receives at least 1 point of magical healing. A creature can use its action to make a {@dc 15} Wisdom ({@skill Medicine}) check to heal an affected creature within 5 feet of it (including itself), restoring any lost speed on a success."
+									]
+								},
+								{
+									"name": "Disarm",
+									"type": "item",
+									"entries": [
+										"The target must succeed on a {@dc 13} Strength {@quickref saving throws|PHB|2|1|saving throw} or drop one item it is holding. The brawler can choose which item is dropped, and can pick it up."
+									]
+								},
+								{
+									"name": "Suplex",
+									"type": "item",
+									"entries": [
+										"The target must succeed on a {@dc 13} Strength {@quickref saving throws|PHB|2|1|saving throw} or be knocked {@condition prone}."
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"environment": [
+				"grassland"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/TDCSR/Rivermaw Brawler.png",
+			"fluff": {
+				"name": "Rivermaw Brawler",
+				"source": "TDCSR",
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Rivermaw Warriors",
+						"page": 253,
+						"entries": [
+							"The {@book Rivermaw herd|TDCSR|3|Rivermaw Herd} is a nomadic society mostly composed of {@book half-giants|TDCSR|4|Half-Giants}, also known as {@book goliaths|TDCSR|4|Half-Giants}, and a mighty force for good on the {@book Dividing Plains|TDCSR|3|Dividing Plains}. The herd was once conquered by a goliath tyrant named Kevdak, then formed anew after Kevdak was eventually defeated by Vox Machina. Free of Kevdak's martial cruelty, the Rivermaw see it as their duty to prevent any such tyrant from conquering the {@book Dividing Plains|TDCSR|3|Dividing Plains} ever again.",
+							"Though most members of the {@book Rivermaw herd|TDCSR|3|Rivermaw Herd} are {@book goliaths|TDCSR|4|Half-Giants}, their ranks include people of all races who wish to live beyond the stone walls of {@book Westruun|TDCSR|3|Westruun} and the palisades of plains towns like {@book Turst Fields|TDCSR|3|Turst Fields}. {@book Orcs|TDCSR|4|orcs}, {@book humans|TDCSR|4|humans}, {@book halflings|TDCSR|4|halflings}, and {@book gnolls|TDCSR|6|gnolls} make up most of the rest of the herd's warriors. Most of those warriors value strength and endurance over other qualities, but the brawlers and stormborn of the Rivermaw are better known for cunning, intelligence, strategy, and a unique attunement to the mighty thunder of the {@deity The Stormlord|Exandria|TDCSR|Stormlord}."
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Rivermaw Brawler",
+								"page": 253,
+								"entries": [
+									"Many children in the {@book Rivermaw herd|TDCSR|3|Rivermaw Herd} get into friendly brawls, but only the truly dedicated learn the art of fist fighting. Rivermaw brawlers usually lead the charge on the battlefield, using their exceptional strength, speed, and cunning to throw an enemy vanguard into chaos.",
+									"Beyond the {@book Dividing Plains|TDCSR|3|Dividing Plains}, brawlers trained by the Rivermaw can be found in noble adventuring parties, working for the {@book Clasp|TDCSR|2|The Clasp} as muscle, in underground fighting rings, and as personal bodyguards. In {@book Emon|TDCSR|3|Emon, the City of Fellowship}, the most famous fist fighters make a name for themselves within the {@book Brawler's League|TDCSR|2|Brawler's League} or the {@book Godsbrawl|TDCSR|3|10. Godsbrawl Ring}, representing the {@deity The Stormlord|Exandria|TDCSR|Stormlord} in that annual holy tournament."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/TDCSR/RivermawWarriorsFluff.webp"
+						},
+						"credit": "{@link Claudia Ianniciello|https://artstation.com/claudiasg}",
+						"altText": "A male and female goliath stand next to each other. The male is bald, clad in leather and metal armor and bears a greataxe that crackles with green, arcane energy. The female has long, dark hair and wears spiked gauntlets."
+					}
+				]
+			},
+			"damageTags": [
+				"S"
+			]
+		},
+		{
+			"name": "Huge Gelatin-eating Boar",
+			"source": "Jama",
+			"page": 323,
+			"basicRules": true,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d10 + 120",
+				"average": 202
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 30,
+			"dex": 14,
+			"con": 26,
+			"int": 2,
+			"wis": 7,
+			"cha": 5,
+			"passive": 8,
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the boar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 28 ({@damage 8d6}) slashing damage. If the target is a creature, it must succeed on a {@dc 21} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Relentless (Recharges after a Short or Long Rest)",
+					"entries": [
+						"If the boar takes 10 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Tusk",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}40 ({@damage 8d6 + 10}) slashing damage."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/giant-boar.mp3"
+			},
+			"traitTags": [
+				"Charge"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"tokenUrl": "https://5e.tools/img/MM/Giant Boar.png",
+			"resist": [
+				"acid"
+			],
+			"bonus": [
+				{
+					"name": "Trample",
+					"entries": [
+						"Trample any foes the Boar moves thrrough, they have to make DC21 STR save or take {@dice 4d6} bludgeoning and fall {@condition prone}, or DC21 Dex save to only fall {@condition prone}. Succeeding on the STR save, reduces the speed of the Boar to 0 until end of turn."
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Nagrim's Ghoul",
+			"source": "Jama",
+			"page": 148,
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "7d8 + 14",
+				"average": 45
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 17,
+			"dex": 18,
+			"con": 14,
+			"int": 7,
+			"wis": 10,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "5",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Nagrim's ghoul makes one Claw and one Bite attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a {@dc 11} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"environment": [
+				"swamp",
+				"underdark",
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/ghoul.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"paralyzed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Ghoul",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Ghoul",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Ghouls roam the night in packs, driven by an insatiable hunger for humanoid flesh.",
+									{
+										"name": "Devourers of Flesh",
+										"type": "entries",
+										"entries": [
+											"Like maggots or carrion beetles, ghouls thrive in places rank with decay and death. A ghoul haunts a place where it can gorge on dead flesh and decomposing organs. When it can't feed on the dead, it pursues living creatures and attempts to make corpses of them. Though they gain no nourishment from the corpses they devour, ghouls are driven by an unending hunger that compels them to consume. A ghoul's undead flesh never rots, and this monster can persist in a crypt or tomb for untold ages without feeding."
+										]
+									},
+									{
+										"name": "Abyssal Origins",
+										"type": "entries",
+										"entries": [
+											"Ghouls trace their origins to the Abyss. Doresain, the first of their kind, was an elf worshiper of Orcus. Turning against his own people, he feasted on humanoid flesh to honor the Demon Prince of Undeath. As a reward for his service, Orcus transformed Doresain into the first ghoul. Doresain served Orcus faithfully in the Abyss, creating ghouls from the demon lord's other servants until an incursion by Yeenoghu, the demonic Gnoll Lord, robbed Doresain of his abyssal domain. When Orcus would not intervene on his behalf, Doresain turned to the elf gods for salvation, and they took pity on him and helped him escape certain destruction. Since then, elves have been immune to the ghouls' paralytic touch."
+										]
+									},
+									{
+										"name": "Ghasts",
+										"type": "entries",
+										"entries": [
+											"Orcus sometimes infuses a ghoul with a stronger dose of abyssal energy, making a ghast. Whereas ghouls are little more than savage beasts, a ghast is cunning and can inspire a pack of ghouls to follow its commands."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Ghoul.webp"
+						}
+					}
+				]
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"Nagrim's ghoul has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"resist": [
+				"necrotic"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Warrior of Aseroth",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "Jama",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"Icy heavy armor + shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d10 + 28",
+				"average": 66
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 18,
+			"int": 10,
+			"wis": 10,
+			"cha": 14,
+			"passive": 13,
+			"cr": "5",
+			"skill": {
+				"athletics": "+10",
+				"intimidation": "+8",
+				"perception": "+3"
+			},
+			"save": {
+				"con": "+7",
+				"str": "+7"
+			},
+			"immune": [
+				"cold"
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical sources",
+					"cond": true
+				},
+				{
+					"resist": []
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Cultist of Aseroth - Cold Blooded",
+					"entries": [
+						"Warrior of Aseroth is immute to being {@condition frightened}, {@condition charmed} and has immunity to Cold damage."
+					]
+				},
+				{
+					"name": "Heavy",
+					"entries": [
+						"Warrior of Aseroth has advantage on saves and checks for effects that would knock it {@condition prone}, cant be moved when {@condition grappled} and has disadvantage on climbing checks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multi attack",
+					"entries": [
+						"Warrior of Aseroth makes two longsword attacks"
+					]
+				},
+				{
+					"name": "longsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage, plus 5 ({@damage 1d10}) cold damage."
+					]
+				},
+				{
+					"name": "Chill to the bone",
+					"entries": [
+						"Target creature within 60ft makes a DC13 Constituion save or recieves {@damage 2d10} cold damage and have their speed half until the end of their next turn, the target suffers no effects on a succesful save."
+					]
+				},
+				{
+					"name": "Proclaim despair (once per day)",
+					"entries": [
+						"The warrior makes a confession of utter despair, all creatures that can hear and understand it within 30ft must make a DC13 Wisdom saving throw or have their speed reduced to zero and become {@condition incapacitated} until the end of their next turn."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"attachedItems": [
+				"longsword|phb"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The warrior is granted spellcasting abilities from their patron.",
+						"DC = 13, attack bonus +5"
+					],
+					"daily": {
+						"1e": [
+							"{@spell fear}",
+							"{@spell rime's binding ice|FTD}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"C",
+				"S"
+			],
+			"damageTagsSpell": [
+				"C"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Frost Hound",
+			"source": "Jama",
+			"page": 182,
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "7d8 + 14"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 17,
+			"dex": 12,
+			"con": 14,
+			"int": 6,
+			"wis": 13,
+			"cha": 6,
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"immune": [
+				"cold"
+			],
+			"languages": [
+				"understands Infernal but can't speak it"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The hound has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 6 ({@damage 1d10}) cold damage."
+					]
+				},
+				{
+					"name": "Fire Breath {@recharge 5}",
+					"entries": [
+						"The hound exhales fire in a 15-foot cone. Each creature in that area must make a {@dc 12} Dexterity saving throw, taking 22 ({@damage 4d10}) cold damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"environment": [
+				"mountain",
+				"underdark"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/hell-hound.mp3"
+			},
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"CS",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Hell Hound",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Hell Hound",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Monstrous, fire-breathing fiends that take the form of powerful dogs, hell hounds are found on the battlefields of Acheron and throughout the Lower Planes. On the Material Plane, hell hounds are most commonly seen in service to devils, fire giants, and other evil creatures that use them as guard animals and companions.",
+									{
+										"name": "Burning Hunger",
+										"type": "entries",
+										"entries": [
+											"Hell hounds hunt in packs, feeding on any creature that appears edible. They avoid potentially dangerous foes in favor of targeting the weakest prey with their savage bite and fiery breath, demonstrating a relentless determination as they pursue that prey to the bitter end.",
+											"When hell hounds feed, the flesh they consume stokes the infernal fires that burn within them. When a hell hound dies, that fire consumes the creature's remains in a billowing eruption of smoke and blazing embers, leaving nothing behind but scorched tufts of black fur."
+										]
+									},
+									{
+										"name": "Evil to the Core",
+										"type": "entries",
+										"entries": [
+											"Hell hounds are smarter than mundane beasts, and their lawful nature makes them good at following orders. However, a hell hound's evil disposition means that the creature can't be trained to be anything other than a ruthless killer. If a hell hound isn't allowed to indulge its malevolent hunger, it quickly abandons or turns against its master."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Hell Hound.webp"
+						},
+						"credit": "Conceptopolis"
+					}
+				]
+			},
+			"damageTags": [
+				"C",
+				"P"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		}
+	]
+}
