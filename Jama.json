@@ -894,7 +894,7 @@
 			],
 			"ac": [
 				{
-					"ac": 15,
+					"ac": 18,
 					"from": [
 						"{@item studded leather armor|phb}"
 					]
@@ -905,14 +905,15 @@
 				"formula": "12d8 + 36"
 			},
 			"speed": {
-				"walk": 30
+				"walk": 30,
+				"climb": 30
 			},
 			"str": 11,
 			"dex": 20,
 			"con": 16,
 			"int": 13,
 			"wis": 11,
-			"cha": 10,
+			"cha": 14,
 			"save": {
 				"dex": "+9",
 				"int": "+5",
@@ -922,9 +923,9 @@
 				"acrobatics": "+7",
 				"perception": "+4",
 				"stealth": "+13",
-				"deception": "+4",
 				"arcana": "+5",
-				"sleight of hand": "+13"
+				"sleight of hand": "+13",
+				"deception": "+10"
 			},
 			"passive": 14,
 			"resist": [
@@ -1207,7 +1208,7 @@
 			]
 		},
 		{
-			"name": "Kuo-toa Priest of the Deep",
+			"name": "Kuo-toa Psychic",
 			"source": "Jama",
 			"page": 199,
 			"size": [
@@ -1310,9 +1311,9 @@
 					]
 				},
 				{
-					"name": "Psychic bolt",
+					"name": "Psychic spike",
 					"entries": [
-						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 60/60 ft., one target 10 ({@damage 2d6}) psychic damage at range. If there are at least 6 allies within 60 feat the damage is increased to 21 ({@damage 4d6})"
+						"An enemy within 60ft that the Psychic ca see has to make a {@dc 12} Wisdom saving throw or take 11 ({@damage 3d6})  If there are at least 6 allies within 60 feat the damage is increased to 21 ({@damage 4d6})"
 					]
 				}
 			],
@@ -1428,8 +1429,7 @@
 				"U"
 			],
 			"miscTags": [
-				"MW",
-				"RW"
+				"MW"
 			],
 			"hasFluff": true,
 			"hasFluffImages": true,
@@ -1441,9 +1441,14 @@
 					]
 				}
 			],
+			"immune": [
+				"psychic"
+			],
 			"damageTags": [
-				"P",
-				"Y"
+				"P"
+			],
+			"savingThrowForced": [
+				"wisdom"
 			]
 		},
 		{
@@ -1616,7 +1621,7 @@
 			"page": 323,
 			"basicRules": true,
 			"size": [
-				"L"
+				"H"
 			],
 			"type": "beast",
 			"alignment": [
@@ -1663,7 +1668,7 @@
 				{
 					"name": "Tusk",
 					"entries": [
-						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}40 ({@damage 8d6 + 10}) slashing damage."
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}40 ({@damage 8d6 + 10}) bludgeoning damage."
 					]
 				}
 			],
@@ -1698,6 +1703,7 @@
 				}
 			],
 			"damageTags": [
+				"B",
 				"S"
 			],
 			"savingThrowForced": [
@@ -1718,7 +1724,7 @@
 				"E"
 			],
 			"ac": [
-				12
+				14
 			],
 			"hp": {
 				"formula": "7d8 + 14",
@@ -2375,6 +2381,306 @@
 				"constitution",
 				"wisdom"
 			]
+		},
+		{
+			"name": "Kuo-toa Priest of the Deep",
+			"source": "Jama",
+			"page": 199,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"kuo-toa"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 9",
+				"average": 49
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 13,
+			"int": 12,
+			"wis": 16,
+			"cha": 8,
+			"skill": {
+				"perception": "+6",
+				"stealth": "+3"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 16,
+			"languages": [
+				"Undercommon"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The kuo-toa can breathe air and water."
+					]
+				},
+				{
+					"name": "Otherworldly Perception",
+					"entries": [
+						"The kuo-toa can sense the presence of any creature within 30 feet of it that is {@condition invisible} or on the Ethereal Plane. It can pinpoint such a creature that is moving."
+					]
+				},
+				{
+					"name": "Slippery",
+					"entries": [
+						"The kuo-toa has advantage on ability checks and saving throws made to escape a grapple."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Water Camouflage",
+					"entries": [
+						"Kuo-Toa have advantage on stealth checks made under water."
+					]
+				},
+				{
+					"name": "Cultist of Igthuun - Linked Telepathy",
+					"entries": [
+						"All cultists of Igthuun can communicate telepathically with each other within 100ft range"
+					]
+				},
+				{
+					"name": "Cultist of Igthuun - Psychic Shielding",
+					"entries": [
+						"All cultists of Igthuun have immunity to psychic damage and advantage on all Wisdom, Charisma and Intelligence saving throws"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Summon Tentacle",
+					"entries": [
+						"The Priest summons a 5ft spectral tentacle, it is immobile, has 20hp and immunity to nonmagical and cold damage. After that all tentacles attack a target within 10ft with  {@hit 4} to hit dealing 9 ({@damage 2d8}) cold damage."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"fluff": {
+				"name": "Kuo-toa",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Kuo-toa are degenerate fishlike humanoids that once inhabited the shores and islands of the surface world. Long ago humans and their ilk drove the kuo-toa underground, where they dwell in madness and everlasting night. Kuo-toa can no longer abide daylight.",
+									{
+										"name": "Mad Slaves",
+										"type": "entries",
+										"entries": [
+											"At the height of the illithid empire, the mind flayers captured kuo-toa by the thousands and forced them into bondage. The kuo-toa were simple creatures, never meant to endure the oppressive mental force the illithids unleashed against them. By the time the mind flayers abandoned them, the prolonged psychic subjugation endured by the kuo-toa had driven them mad.",
+											"Their minds shattered beyond repair, the kuo-toa adopted a religious fervor, inventing gods to protect them against threats. Most notable of these threats are the drow, which have slain the kuo-toa on sight since the days when the two races first met."
+										]
+									},
+									{
+										"name": "God Makers",
+										"type": "entries",
+										"entries": [
+											"Kuo-toa worship gods of their own insane creation, but if enough kuo-toa believe that a god is real, the energy of their collective subconscious can cause that god to manifest as a physical entity. The form a kuo-toa god takes depends on the inspiration for its divine image, and is usually random or nonsensical.",
+											"One of the most revered gods of the kuo-toa is Blibdoolpoolp the Sea Mother, who takes the form of a female human with a crayfish head, a crayfish's claws, and an articulated shell covering her shoulders. Blibdoolpoolp was likely invented by a kuo-toa that improved on a broken human statue by adding the limbs and head of a crustacean. In sudden awe of its handiwork, it then named the resulting form a god.",
+											"Kuo-toa that cross paths with an aboleth often find themselves worshiping it as a god, their madness blinding them to the fact that the aboleth is merely using them for its own nefarious ends."
+										]
+									},
+									{
+										"name": "Theocratic Rulers",
+										"type": "entries",
+										"entries": [
+											"Kuo-toa archpriests are surrounded by fanatical devotees of their faith. The archpriest of a kuo-toa domain demands that all its subjects worship a specific god. An archpriest's mad belief in its god is so fervent that it manifests the powers of a high cleric. The archpriest can also bestow spells to devout underlings called whips. One or more of these whips are also the archpriest's children, and their primary role in kuo-toan society is to fight to the death to claim the throne when the archpriest dies. If a whip displeases the archpriest, the archpriest can strip it of its spellcasting ability, if not its life.",
+											"The archpriest's decrees are enforced by monitors, devout kuo-toa that act as the archpriest's eyes and ears. Monitors are deadly hand-to-hand combatants, and lesser kuo-toa live in fear of them.",
+											"Kuo-toa Gear. Many weapons of the kuo-toa are designed to capture rather than kill. Nets are common, though some carry pincer staffs (also called mancatchers) designed to trap and immobilize foes. Kuo-toa warriors also treat their shields with a sticky goo that catches incoming weapons.",
+											"In general, kuo-toa don't like the weight of armor on their slippery bodies and rely on their natural rubbery hides for protection. However, they like to wear jewelry made from scavenged bones, shells, pearls, gems, and carapace fragments."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Variant: Kuo-toa Monitor",
+										"entries": [
+											"A kuo-toa monitor has a challenge rating of 3 (700 XP). It has the same statistics as a kuo-toa whip except that it adds its Wisdom modifier to its Armor Class (AC 13), loses the Spellcaster trait, and replaces the whip's action options with the following action options.",
+											{
+												"name": "Multiattack",
+												"entries": [
+													"The kuo-toa makes one bite attack and two unarmed strikes."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Bite",
+												"entries": [
+													"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 4 ({@damage 1d4 + 2}) piercing damage."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Unarmed Strike",
+												"entries": [
+													"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 ({@damage 1d6 + 2}) bludgeoning damage + 3 ({@damage 1d6}) lightning damage, and the target can't take reactions until the end of the kuo-toa's next turn."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "insetReadaloud",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"They invent their own gods... the very definition of insanity."
+										],
+										"by": "Sabal Mizzrym of Menzoberranzan"
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Kuo-toa.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Kuo-toa.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/kuo-toa.mp3"
+			},
+			"traitTags": [
+				"Amphibious",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"U"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"immune": [
+				"psychic"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Priest of the Deep casts one of the following spells suing wisdom as their spellcasting ability. {@dc 14}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell hold person}",
+							"{@spell rime's binding ice|FTD}",
+							"{@spell sleet storm}",
+							"{@spell tidal wave|XGE}",
+							"{@spell watery sphere|XGE}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"C",
+				"P"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Peregrine",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"halfling"
+				]
+			},
+			"source": "Jama",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"formula": "1d8 + 1",
+				"average": 5
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 12,
+			"int": 10,
+			"wis": 16,
+			"cha": 10,
+			"passive": 13,
+			"cr": "5"
 		}
 	]
 }
