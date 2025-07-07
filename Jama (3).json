@@ -1,0 +1,6047 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "Jama",
+				"abbreviation": "J",
+				"full": "Jama",
+				"url": "",
+				"authors": [
+					"Me"
+				],
+				"convertedBy": [],
+				"version": "1.0.0"
+			}
+		],
+		"dateAdded": 1689544556,
+		"dateLastModified": 1689544556
+	},
+	"monster": [
+		{
+			"name": "Ekxus",
+			"shortName": true,
+			"isNpc": true,
+			"source": "Jama",
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					{
+						"tag": "tiefling",
+						"prefix": "Dispater"
+					}
+				]
+			},
+			"alignment": [
+				"C",
+				"G"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"Studded leather armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 30",
+				"average": 75
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 20,
+			"dex": 20,
+			"con": 16,
+			"int": 13,
+			"wis": 12,
+			"cha": 15,
+			"save": {
+				"dex": "+7",
+				"str": "+7"
+			},
+			"skill": {
+				"acrobatics": "+10",
+				"athletics": "+10",
+				"deception": "+5",
+				"insight": "+4",
+				"performance": "+8",
+				"sleight of hand": "+7",
+				"stealth": "+7",
+				"persuasion": "+5",
+				"intimidation": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"resist": [
+				"fire"
+			],
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"{@dc 13} Dispater tiefling"
+					],
+					"daily": {
+						"1e": [
+							"{@spell detect thoughts}",
+							"{@spell disguise self}"
+						]
+					},
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell thaumaturgy}"
+							]
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Axe master",
+					"entries": [
+						"Ekxes adds {@dice 1d6} to all damage he does using axes and can draw any number of them in a turn."
+					]
+				},
+				{
+					"name": "Nimble",
+					"entries": [
+						"Opportunity attacks against Ekxus are made with disadvantage."
+					]
+				},
+				{
+					"name": "Sure-Footed",
+					"entries": [
+						"Ekxus has advantage on Strength and Dexterity saving throws made against effects that would knock him {@condition prone}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Ekxus makes 3 Hand axe attacks"
+					]
+				},
+				{
+					"name": "Hand axe",
+					"entries": [
+						"{@atk mw,rw} {@hit 8} to hit, reach 5 ft. or range 60/60 ft., one target. {@h}12 ({@damage 2d6 + 5}) slashing damage in melee, or 12 ({@damage 2d6 + 5}) slashing damage at range."
+					]
+				}
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"RW",
+				"MW"
+			],
+			"spellcastingTags": [
+				"O"
+			]
+		},
+		{
+			"name": "Kuo-toa",
+			"source": "Jama",
+			"page": 199,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"kuo-toa"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d8",
+				"average": 26
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 11,
+			"int": 11,
+			"wis": 10,
+			"cha": 8,
+			"skill": {
+				"perception": "+2",
+				"stealth": "+2"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 12,
+			"languages": [
+				"Undercommon"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The kuo-toa can breathe air and water."
+					]
+				},
+				{
+					"name": "Otherworldly Perception",
+					"entries": [
+						"The kuo-toa can sense the presence of any creature within 30 feet of it that is {@condition invisible} or on the Ethereal Plane. It can pinpoint such a creature that is moving."
+					]
+				},
+				{
+					"name": "Slippery",
+					"entries": [
+						"The kuo-toa has advantage on ability checks and saving throws made to escape a grapple."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Water Camouflage",
+					"entries": [
+						"Kuo-Toa have advantage on stealth checks made under water."
+					]
+				},
+				{
+					"name": "Linked Telepathy",
+					"entries": [
+						"All cultists of Igthuun can communicate telepathically with each other within 100ft range"
+					]
+				},
+				{
+					"name": "Psychic Shielding",
+					"entries": [
+						"All cultists of Igthuun have immunity to psychic damage and advantage on all Wisdom, Charisma and Intelligence saving throws"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}3 ({@damage 1d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Spear (3x)",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}4 ({@damage 1d6 + 2}) piercing damage, or 5 ({@damage 1d8 + 2}) piercing damage if used with two hands to make a melee attack."
+					]
+				},
+				{
+					"name": "Net",
+					"entries": [
+						"{@atk rw} {@hit 4} to hit, range 10/20 ft., one Large or smaller creature. {@h}The target is {@condition restrained}. A creature can use its action to make a {@dc 10} Strength check to free itself or another creature in a net, ending the effect on a success. Dealing 5 slashing damage to the net (AC 10) frees the target without harming it and destroys the net."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"fluff": {
+				"name": "Kuo-toa",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Kuo-toa are degenerate fishlike humanoids that once inhabited the shores and islands of the surface world. Long ago humans and their ilk drove the kuo-toa underground, where they dwell in madness and everlasting night. Kuo-toa can no longer abide daylight.",
+									{
+										"name": "Mad Slaves",
+										"type": "entries",
+										"entries": [
+											"At the height of the illithid empire, the mind flayers captured kuo-toa by the thousands and forced them into bondage. The kuo-toa were simple creatures, never meant to endure the oppressive mental force the illithids unleashed against them. By the time the mind flayers abandoned them, the prolonged psychic subjugation endured by the kuo-toa had driven them mad.",
+											"Their minds shattered beyond repair, the kuo-toa adopted a religious fervor, inventing gods to protect them against threats. Most notable of these threats are the drow, which have slain the kuo-toa on sight since the days when the two races first met."
+										]
+									},
+									{
+										"name": "God Makers",
+										"type": "entries",
+										"entries": [
+											"Kuo-toa worship gods of their own insane creation, but if enough kuo-toa believe that a god is real, the energy of their collective subconscious can cause that god to manifest as a physical entity. The form a kuo-toa god takes depends on the inspiration for its divine image, and is usually random or nonsensical.",
+											"One of the most revered gods of the kuo-toa is Blibdoolpoolp the Sea Mother, who takes the form of a female human with a crayfish head, a crayfish's claws, and an articulated shell covering her shoulders. Blibdoolpoolp was likely invented by a kuo-toa that improved on a broken human statue by adding the limbs and head of a crustacean. In sudden awe of its handiwork, it then named the resulting form a god.",
+											"Kuo-toa that cross paths with an aboleth often find themselves worshiping it as a god, their madness blinding them to the fact that the aboleth is merely using them for its own nefarious ends."
+										]
+									},
+									{
+										"name": "Theocratic Rulers",
+										"type": "entries",
+										"entries": [
+											"Kuo-toa archpriests are surrounded by fanatical devotees of their faith. The archpriest of a kuo-toa domain demands that all its subjects worship a specific god. An archpriest's mad belief in its god is so fervent that it manifests the powers of a high cleric. The archpriest can also bestow spells to devout underlings called whips. One or more of these whips are also the archpriest's children, and their primary role in kuo-toan society is to fight to the death to claim the throne when the archpriest dies. If a whip displeases the archpriest, the archpriest can strip it of its spellcasting ability, if not its life.",
+											"The archpriest's decrees are enforced by monitors, devout kuo-toa that act as the archpriest's eyes and ears. Monitors are deadly hand-to-hand combatants, and lesser kuo-toa live in fear of them.",
+											"Kuo-toa Gear. Many weapons of the kuo-toa are designed to capture rather than kill. Nets are common, though some carry pincer staffs (also called mancatchers) designed to trap and immobilize foes. Kuo-toa warriors also treat their shields with a sticky goo that catches incoming weapons.",
+											"In general, kuo-toa don't like the weight of armor on their slippery bodies and rely on their natural rubbery hides for protection. However, they like to wear jewelry made from scavenged bones, shells, pearls, gems, and carapace fragments."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Variant: Kuo-toa Monitor",
+										"entries": [
+											"A kuo-toa monitor has a challenge rating of 3 (700 XP). It has the same statistics as a kuo-toa whip except that it adds its Wisdom modifier to its Armor Class (AC 13), loses the Spellcaster trait, and replaces the whip's action options with the following action options.",
+											{
+												"name": "Multiattack",
+												"entries": [
+													"The kuo-toa makes one bite attack and two unarmed strikes."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Bite",
+												"entries": [
+													"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 4 ({@damage 1d4 + 2}) piercing damage."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Unarmed Strike",
+												"entries": [
+													"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 ({@damage 1d6 + 2}) bludgeoning damage + 3 ({@damage 1d6}) lightning damage, and the target can't take reactions until the end of the kuo-toa's next turn."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "insetReadaloud",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"They invent their own gods... the very definition of insanity."
+										],
+										"by": "Sabal Mizzrym of Menzoberranzan"
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Kuo-toa.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Kuo-toa.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/kuo-toa.mp3"
+			},
+			"traitTags": [
+				"Amphibious",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"U"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"MLW",
+				"THW",
+				"RNG"
+			],
+			"conditionInflict": [
+				"restrained|undefined"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"attachedItems": [
+				"net|phb",
+				"spear|phb"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			]
+		},
+		{
+			"name": "Kuo-toa Guardian",
+			"source": "Jama",
+			"page": 199,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"kuo-toa"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"makeshift armor",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d10 + 4",
+				"average": 36
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 13,
+			"int": 11,
+			"wis": 10,
+			"cha": 8,
+			"skill": {
+				"perception": "+2"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 12,
+			"immune": [
+				"psychic"
+			],
+			"languages": [
+				"Undercommon"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The kuo-toa can breathe air and water."
+					]
+				},
+				{
+					"name": "Otherworldly Perception",
+					"entries": [
+						"The kuo-toa can sense the presence of any creature within 30 feet of it that is {@condition invisible} or on the Ethereal Plane. It can pinpoint such a creature that is moving."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Water Camouflage",
+					"entries": [
+						"Kuo-Toa have advantage on stealth checks made under water."
+					]
+				},
+				{
+					"name": "Linked Telepathy",
+					"entries": [
+						"All cultists of Igthuun can communicate telepathically with each other within 100ft range"
+					]
+				},
+				{
+					"name": "Psychic Shielding",
+					"entries": [
+						"All cultists of Igthuun have immunity to psychic damage and advantage on all Wisdom, Charisma and Intelligence saving throws"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Kuo-Toa Guardian makes two attacks"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Jagged Sword",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Sticky Shield",
+					"entries": [
+						"When a creature misses the kuo-toa with a melee weapon attack, the kuo-toa uses its sticky shield to catch the weapon. The attacker must succeed on a {@dc 13} Strength saving throw, or the weapon becomes stuck to the kuo-toa's shield. If the weapon's wielder can't or won't let go of the weapon, the wielder is {@condition grappled} while the weapon is stuck. While stuck, the weapon can't be used. A creature can pull the weapon free by taking an action to make a {@dc 13} Strength check and succeeding."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"fluff": {
+				"name": "Kuo-toa",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Kuo-toa are degenerate fishlike humanoids that once inhabited the shores and islands of the surface world. Long ago humans and their ilk drove the kuo-toa underground, where they dwell in madness and everlasting night. Kuo-toa can no longer abide daylight.",
+									{
+										"name": "Mad Slaves",
+										"type": "entries",
+										"entries": [
+											"At the height of the illithid empire, the mind flayers captured kuo-toa by the thousands and forced them into bondage. The kuo-toa were simple creatures, never meant to endure the oppressive mental force the illithids unleashed against them. By the time the mind flayers abandoned them, the prolonged psychic subjugation endured by the kuo-toa had driven them mad.",
+											"Their minds shattered beyond repair, the kuo-toa adopted a religious fervor, inventing gods to protect them against threats. Most notable of these threats are the drow, which have slain the kuo-toa on sight since the days when the two races first met."
+										]
+									},
+									{
+										"name": "God Makers",
+										"type": "entries",
+										"entries": [
+											"Kuo-toa worship gods of their own insane creation, but if enough kuo-toa believe that a god is real, the energy of their collective subconscious can cause that god to manifest as a physical entity. The form a kuo-toa god takes depends on the inspiration for its divine image, and is usually random or nonsensical.",
+											"One of the most revered gods of the kuo-toa is Blibdoolpoolp the Sea Mother, who takes the form of a female human with a crayfish head, a crayfish's claws, and an articulated shell covering her shoulders. Blibdoolpoolp was likely invented by a kuo-toa that improved on a broken human statue by adding the limbs and head of a crustacean. In sudden awe of its handiwork, it then named the resulting form a god.",
+											"Kuo-toa that cross paths with an aboleth often find themselves worshiping it as a god, their madness blinding them to the fact that the aboleth is merely using them for its own nefarious ends."
+										]
+									},
+									{
+										"name": "Theocratic Rulers",
+										"type": "entries",
+										"entries": [
+											"Kuo-toa archpriests are surrounded by fanatical devotees of their faith. The archpriest of a kuo-toa domain demands that all its subjects worship a specific god. An archpriest's mad belief in its god is so fervent that it manifests the powers of a high cleric. The archpriest can also bestow spells to devout underlings called whips. One or more of these whips are also the archpriest's children, and their primary role in kuo-toan society is to fight to the death to claim the throne when the archpriest dies. If a whip displeases the archpriest, the archpriest can strip it of its spellcasting ability, if not its life.",
+											"The archpriest's decrees are enforced by monitors, devout kuo-toa that act as the archpriest's eyes and ears. Monitors are deadly hand-to-hand combatants, and lesser kuo-toa live in fear of them.",
+											"Kuo-toa Gear. Many weapons of the kuo-toa are designed to capture rather than kill. Nets are common, though some carry pincer staffs (also called mancatchers) designed to trap and immobilize foes. Kuo-toa warriors also treat their shields with a sticky goo that catches incoming weapons.",
+											"In general, kuo-toa don't like the weight of armor on their slippery bodies and rely on their natural rubbery hides for protection. However, they like to wear jewelry made from scavenged bones, shells, pearls, gems, and carapace fragments."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Variant: Kuo-toa Monitor",
+										"entries": [
+											"A kuo-toa monitor has a challenge rating of 3 (700 XP). It has the same statistics as a kuo-toa whip except that it adds its Wisdom modifier to its Armor Class (AC 13), loses the Spellcaster trait, and replaces the whip's action options with the following action options.",
+											{
+												"name": "Multiattack",
+												"entries": [
+													"The kuo-toa makes one bite attack and two unarmed strikes."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Bite",
+												"entries": [
+													"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 4 ({@damage 1d4 + 2}) piercing damage."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Unarmed Strike",
+												"entries": [
+													"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 ({@damage 1d6 + 2}) bludgeoning damage + 3 ({@damage 1d6}) lightning damage, and the target can't take reactions until the end of the kuo-toa's next turn."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "insetReadaloud",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"They invent their own gods... the very definition of insanity."
+										],
+										"by": "Sabal Mizzrym of Menzoberranzan"
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Kuo-toa.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Kuo-toa.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/kuo-toa.mp3"
+			},
+			"traitTags": [
+				"Amphibious",
+				"Camouflage",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"U"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"grappled"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"save": {
+				"str": "+5",
+				"con": "+3"
+			},
+			"damageTags": [
+				"P"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Carlayla",
+			"source": "Jama",
+			"page": 59,
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 60,
+				"formula": "8d8 + 24"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 18,
+			"con": 16,
+			"int": 10,
+			"wis": 13,
+			"cha": 20,
+			"save": {
+				"dex": "+7",
+				"wis": "+4"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"perception": "+4",
+				"performance": "+8",
+				"deception": "+11",
+				"stealth": "+7",
+				"persuasion": "+11"
+			},
+			"passive": 14,
+			"cr": "5",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The bard casts one of the following spells, using Charisma as the spellcasting ability (spell save {@dc 14}):"
+					],
+					"will": [
+						"{@spell dancing lights}",
+						"{@spell mage hand}",
+						"{@spell prestidigitation}",
+						"{@spell vicious mockery} (2d4)"
+					],
+					"daily": {
+						"1e": [
+							"{@spell charm person}",
+							"{@spell fear}",
+							"{@spell hold person}",
+							"{@spell invisibility}",
+							"{@spell sleep}",
+							"{@spell tongues}"
+						]
+					},
+					"ability": "cha",
+					"type": "spellcasting"
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The bard makes two Shortsword or Shortbow attacks. It can replace one attack with a use of Spellcasting."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Cacophony {@recharge 4}",
+					"entries": [
+						"Each creature in a 15-foot cube originating from the bard must make a {@dc 16} Constitution saving throw. On a failed save, a creature takes 18 ({@damage 4d8}) thunder damage and is pushed up to 10 feet away from the bard. On a successful save, a creature takes half as much damage and isn't pushed."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Placate (2/Day)",
+					"entries": [
+						"The bard targets one creature within 30 feet of it. If the target can hear the bard, the target must succeed on a {@dc 16} Charisma saving throw or have disadvantage on ability checks, attack rolls, and saving throws until the start of the bard's next turn."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/bard.mp3"
+			},
+			"attachedItems": [
+				"shortsword|phb"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"spellcastingTags": [
+				"CB"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"AOE"
+			],
+			"conditionInflictSpell": [
+				"charmed",
+				"invisible",
+				"unconscious"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MPMM/Bard.png",
+			"fluff": {
+				"name": "Bard",
+				"source": "MPMM",
+				"entries": [
+					"Bards are gifted poets, storytellers, and entertainers who travel far and wide. They're commonly found in taverns or in the company of jolly bands of adventurers, rough-and-tumble mercenaries, and wealthy patrons.",
+					"Each bard is a master of at least one type of performance. You may choose a bard's main type, or you may roll on the Bard {@skill Performance} Types table to determine it.",
+					{
+						"type": "table",
+						"caption": "Bard Performance Types",
+						"colLabels": [
+							"d10",
+							"Performance Type"
+						],
+						"colStyles": [
+							"col-1 text-center",
+							"col-11"
+						],
+						"rows": [
+							[
+								"1",
+								"Poetry"
+							],
+							[
+								"2",
+								"Singing"
+							],
+							[
+								"3",
+								"Bagpipe"
+							],
+							[
+								"4",
+								"Flute"
+							],
+							[
+								"5",
+								"Dancing"
+							],
+							[
+								"6",
+								"Drum"
+							],
+							[
+								"7",
+								"Lute"
+							],
+							[
+								"8",
+								"Puppetry"
+							],
+							[
+								"9",
+								"Mime"
+							],
+							[
+								"10",
+								"Acting"
+							]
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MPMM/Bard.webp"
+						}
+					}
+				]
+			},
+			"languages": [
+				"Common",
+				"Elvish"
+			],
+			"languageTags": [
+				"C",
+				"E"
+			],
+			"damageTags": [
+				"P",
+				"T"
+			],
+			"damageTagsSpell": [
+				"Y"
+			],
+			"savingThrowForced": [
+				"charisma",
+				"constitution"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Sin Haku",
+			"source": "Jama",
+			"page": 343,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"yuan-ti"
+				]
+			},
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"NY",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item studded leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 90,
+				"formula": "12d8 + 36"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 11,
+			"dex": 20,
+			"con": 16,
+			"int": 13,
+			"wis": 11,
+			"cha": 14,
+			"save": {
+				"dex": "+9",
+				"int": "+5",
+				"wis": "+4"
+			},
+			"skill": {
+				"acrobatics": "+7",
+				"perception": "+4",
+				"stealth": "+13",
+				"arcana": "+5",
+				"sleight of hand": "+13",
+				"deception": "+10"
+			},
+			"passive": 14,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"Thieves' cant",
+				"Common",
+				"Draconic"
+			],
+			"cr": "9",
+			"trait": [
+				{
+					"name": "Assassinate",
+					"entries": [
+						"During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a {@quickref Surprise|PHB|3|0|surprised} creature is a critical hit."
+					]
+				},
+				{
+					"name": "Evasion",
+					"entries": [
+						"If the assassin is subjected to an effect that allows it to make a Dexterity saving throw to take only half damage, the assassin instead takes no damage if it succeeds on the saving throw, and only half damage if it fails."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"The assassin deals an extra 31 ({@dice 5d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't {@condition incapacitated} and the assassin doesn't have disadvantage on the attack roll."
+					]
+				},
+				{
+					"name": "Magic Resistance",
+					"entries": [
+						"The sin haku has advantage on saving throws against spells and other magical effects."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The assassin makes two shortsword attacks."
+					]
+				},
+				{
+					"name": "Shortsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 24 ({@damage 7d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Light Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage, and the target must make a {@dc 15} Constitution saving throw, taking 24 ({@damage 7d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/assassin.mp3"
+			},
+			"attachedItems": [
+				"light crossbow|phb",
+				"shortsword|phb"
+			],
+			"traitTags": [
+				"Magic Resistance",
+				"Sneak Attack"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TC",
+				"C",
+				"DR"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MM/Assassin.png",
+			"fluff": {
+				"name": "Assassin",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Trained in the use of poison, assassins are remorseless killers who work for nobles, guildmasters, sovereigns, and anyone else who can afford them."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Assassin.webp"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"I",
+				"P"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Jumping Spider",
+			"source": "Jama",
+			"page": 151,
+			"size": [
+				"L"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "4d12 + 4",
+				"average": 30
+			},
+			"speed": {
+				"walk": 40,
+				"climb": 40
+			},
+			"str": 14,
+			"dex": 10,
+			"con": 12,
+			"int": 6,
+			"wis": 12,
+			"cha": 4,
+			"skill": {
+				"stealth": "+4",
+				"acrobatics": "+2"
+			},
+			"senses": [
+				"tremorsense 60 ft."
+			],
+			"passive": 11,
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The deep spider can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Web Sense",
+					"entries": [
+						"While in contact with a web, the deep spider knows the exact location of any other creature in contact with the same web."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The deep spider ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The deep spider makes two foreleg attacks and one bite attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 3}) piercing damage, and the target must make a {@dc 12} Constitution saving throw, taking 9 ({@damage 2d8}) poison damage on a failed save, or half as much damage on a successful one. If the poison damage reduces the target to 0 hit points, the target is stable but {@condition poisoned} for 1 hour, even after regaining hit points, and is {@condition paralyzed} while {@condition poisoned} in this way."
+					]
+				},
+				{
+					"name": "Foreleg",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 3}) slashing damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Spider Climb",
+				"Web Sense",
+				"Web Walker"
+			],
+			"senseTags": [
+				"T"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"paralyzed",
+				"poisoned"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/MaBJoV/Deep Spider.png",
+			"fluff": {
+				"name": "Deep Spider",
+				"source": "MaBJoV",
+				"entries": [
+					"Sword spiders are a type of giant arachnid that stalk the forests and caverns of Faerûn, walking on legs that resemble razor-sharp blades. These solitary predators move incredibly fast and with great stealth for their large size. The sword spider's sleek, 12-foot-long body is encased in a durable black exoskeleton covered in fine dark hairs. Although their eyesight is poor, sword spiders locate their prey using {@sense tremorsense|MM} to feel for minute vibrations in the ground.",
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"name": "Natural Weapons",
+										"entries": [
+											"All eight legs of a sword spider end in thick chitinous plates with serrated ridges. However, its primary weapons are its front two legs, which look like a pair of massive curved swords. Its victims are impaled upon these limbs and brought close enough for the spider to deliver its poisonous bite. Once slain, its prey is then chopped up into manageable morsels that can be fed into its cavernous maw lined with multiple rows of crooked fangs."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Death From Above",
+										"entries": [
+											"Rather than trapping its food within a pre-constructed web, sword spiders prefer to wait for prey high up in tree branches and on cavern walls. (Despite their large frames, sword spiders retain the ability to cling to most surfaces, making them adept climbers.) Once it spots its prey, the spider sprays the creature with a restraining web and drops down with all eight of its lethal legs extended to impale its meal. When hunting in areas not conducive to this strategy, sword spiders instead stalk and chase their prey like big cats and are able to leap forward up to 30 feet, lashing out with their forelimbs."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Deep Spiders",
+										"entries": [
+											"Sword spiders are native to the jungles of Mhair on the Chultan Peninsula in southwest Faerûn. Drow traders brought them to the Underdark where they were bred for use in battle under the control of Lolthite priestesses. These variants are called deep spiders and many have since escaped their pens and, with the ability to tolerate a wide range of climates, adapted quickly to their new subterranean homes. These creatures soon spread throughout the Underdark with many finding their way to the surface."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MaBJoV/Sword Spider.webp"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"I",
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Kuo-toa Psychic",
+			"source": "Jama",
+			"page": 199,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"kuo-toa"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": "5d8"
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 11,
+			"int": 11,
+			"wis": 14,
+			"cha": 8,
+			"skill": {
+				"perception": "+4",
+				"stealth": "+2"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 14,
+			"languages": [
+				"Undercommon"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The kuo-toa can breathe air and water."
+					]
+				},
+				{
+					"name": "Otherworldly Perception",
+					"entries": [
+						"The kuo-toa can sense the presence of any creature within 30 feet of it that is {@condition invisible} or on the Ethereal Plane. It can pinpoint such a creature that is moving."
+					]
+				},
+				{
+					"name": "Slippery",
+					"entries": [
+						"The kuo-toa has advantage on ability checks and saving throws made to escape a grapple."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Water Camouflage",
+					"entries": [
+						"Kuo-Toa have advantage on stealth checks made under water."
+					]
+				},
+				{
+					"name": "Cultist of Igthuun - Linked Telepathy",
+					"entries": [
+						"All cultists of Igthuun can communicate telepathically with each other within 100ft range"
+					]
+				},
+				{
+					"name": "Cultist of Igthuun - Psychic Shielding",
+					"entries": [
+						"All cultists of Igthuun have immunity to psychic damage and advantage on all Wisdom, Charisma and Intelligence saving throws"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Psychic spike",
+					"entries": [
+						"An enemy within 60ft that the Psychic ca see has to make a {@dc 12} Wisdom saving throw or take 11 ({@damage 3d6})  If there are at least 6 allies within 60 feat the damage is increased to 21 ({@damage 4d6})"
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"fluff": {
+				"name": "Kuo-toa",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Kuo-toa are degenerate fishlike humanoids that once inhabited the shores and islands of the surface world. Long ago humans and their ilk drove the kuo-toa underground, where they dwell in madness and everlasting night. Kuo-toa can no longer abide daylight.",
+									{
+										"name": "Mad Slaves",
+										"type": "entries",
+										"entries": [
+											"At the height of the illithid empire, the mind flayers captured kuo-toa by the thousands and forced them into bondage. The kuo-toa were simple creatures, never meant to endure the oppressive mental force the illithids unleashed against them. By the time the mind flayers abandoned them, the prolonged psychic subjugation endured by the kuo-toa had driven them mad.",
+											"Their minds shattered beyond repair, the kuo-toa adopted a religious fervor, inventing gods to protect them against threats. Most notable of these threats are the drow, which have slain the kuo-toa on sight since the days when the two races first met."
+										]
+									},
+									{
+										"name": "God Makers",
+										"type": "entries",
+										"entries": [
+											"Kuo-toa worship gods of their own insane creation, but if enough kuo-toa believe that a god is real, the energy of their collective subconscious can cause that god to manifest as a physical entity. The form a kuo-toa god takes depends on the inspiration for its divine image, and is usually random or nonsensical.",
+											"One of the most revered gods of the kuo-toa is Blibdoolpoolp the Sea Mother, who takes the form of a female human with a crayfish head, a crayfish's claws, and an articulated shell covering her shoulders. Blibdoolpoolp was likely invented by a kuo-toa that improved on a broken human statue by adding the limbs and head of a crustacean. In sudden awe of its handiwork, it then named the resulting form a god.",
+											"Kuo-toa that cross paths with an aboleth often find themselves worshiping it as a god, their madness blinding them to the fact that the aboleth is merely using them for its own nefarious ends."
+										]
+									},
+									{
+										"name": "Theocratic Rulers",
+										"type": "entries",
+										"entries": [
+											"Kuo-toa archpriests are surrounded by fanatical devotees of their faith. The archpriest of a kuo-toa domain demands that all its subjects worship a specific god. An archpriest's mad belief in its god is so fervent that it manifests the powers of a high cleric. The archpriest can also bestow spells to devout underlings called whips. One or more of these whips are also the archpriest's children, and their primary role in kuo-toan society is to fight to the death to claim the throne when the archpriest dies. If a whip displeases the archpriest, the archpriest can strip it of its spellcasting ability, if not its life.",
+											"The archpriest's decrees are enforced by monitors, devout kuo-toa that act as the archpriest's eyes and ears. Monitors are deadly hand-to-hand combatants, and lesser kuo-toa live in fear of them.",
+											"Kuo-toa Gear. Many weapons of the kuo-toa are designed to capture rather than kill. Nets are common, though some carry pincer staffs (also called mancatchers) designed to trap and immobilize foes. Kuo-toa warriors also treat their shields with a sticky goo that catches incoming weapons.",
+											"In general, kuo-toa don't like the weight of armor on their slippery bodies and rely on their natural rubbery hides for protection. However, they like to wear jewelry made from scavenged bones, shells, pearls, gems, and carapace fragments."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Variant: Kuo-toa Monitor",
+										"entries": [
+											"A kuo-toa monitor has a challenge rating of 3 (700 XP). It has the same statistics as a kuo-toa whip except that it adds its Wisdom modifier to its Armor Class (AC 13), loses the Spellcaster trait, and replaces the whip's action options with the following action options.",
+											{
+												"name": "Multiattack",
+												"entries": [
+													"The kuo-toa makes one bite attack and two unarmed strikes."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Bite",
+												"entries": [
+													"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 4 ({@damage 1d4 + 2}) piercing damage."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Unarmed Strike",
+												"entries": [
+													"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 ({@damage 1d6 + 2}) bludgeoning damage + 3 ({@damage 1d6}) lightning damage, and the target can't take reactions until the end of the kuo-toa's next turn."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "insetReadaloud",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"They invent their own gods... the very definition of insanity."
+										],
+										"by": "Sabal Mizzrym of Menzoberranzan"
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Kuo-toa.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Kuo-toa.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/kuo-toa.mp3"
+			},
+			"traitTags": [
+				"Amphibious",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"U"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"reaction": [
+				{
+					"name": "Otherwordly influnce",
+					"entries": [
+						"As a reaction the priest makes an attack miss or counters a spell with level under {@dice 1d6}. They cant perform this action if there are not at least 3 allies within 60ft. If there are 6 or more allies the dice increase to {@dice 2d6}."
+					]
+				}
+			],
+			"immune": [
+				"psychic"
+			],
+			"damageTags": [
+				"P"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Rivermaw Brawler",
+			"shortName": "brawler",
+			"group": [
+				"Rivermaw Herd"
+			],
+			"source": "Jama",
+			"page": 254,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"any"
+				]
+			},
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"unarmored defense"
+					]
+				}
+			],
+			"hp": {
+				"average": 65,
+				"formula": "10d8 + 20"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 17,
+			"dex": 14,
+			"con": 15,
+			"int": 14,
+			"wis": 16,
+			"cha": 8,
+			"save": {
+				"str": "+5",
+				"wis": "+5"
+			},
+			"skill": {
+				"acrobatics": "+4",
+				"athletics": "+5",
+				"perception": "+5"
+			},
+			"passive": 15,
+			"languages": [
+				"Common",
+				"Giant"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Unarmored Defense (Scales)",
+					"entries": [
+						"While the brawler is wearing no armor and wielding no {@item shield|PHB}, its AC equal to 13+its constitution modifier"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The brawler makes three unarmed strikes."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) slashing damage. If the target is a Large or smaller creature, the brawler can choose one of the following additional effects:",
+						{
+							"type": "list",
+							"items": [
+								{
+									"name": "Bruise",
+									"type": "item",
+									"entries": [
+										"The target must succeed on a {@dc 13} Constitution {@quickref saving throws|PHB|2|1|saving throw}. On a failure, its speed is reduced by 5 feet until it receives at least 1 point of magical healing. A creature can use its action to make a {@dc 15} Wisdom ({@skill Medicine}) check to heal an affected creature within 5 feet of it (including itself), restoring any lost speed on a success."
+									]
+								},
+								{
+									"name": "Disarm",
+									"type": "item",
+									"entries": [
+										"The target must succeed on a {@dc 13} Strength {@quickref saving throws|PHB|2|1|saving throw} or drop one item it is holding. The brawler can choose which item is dropped, and can pick it up."
+									]
+								},
+								{
+									"name": "Suplex",
+									"type": "item",
+									"entries": [
+										"The target must succeed on a {@dc 13} Strength {@quickref saving throws|PHB|2|1|saving throw} or be knocked {@condition prone}."
+									]
+								}
+							]
+						}
+					]
+				}
+			],
+			"environment": [
+				"grassland"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C",
+				"GI"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"tokenUrl": "https://5e.tools/img/TDCSR/Rivermaw Brawler.png",
+			"fluff": {
+				"name": "Rivermaw Brawler",
+				"source": "TDCSR",
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Rivermaw Warriors",
+						"page": 253,
+						"entries": [
+							"The {@book Rivermaw herd|TDCSR|3|Rivermaw Herd} is a nomadic society mostly composed of {@book half-giants|TDCSR|4|Half-Giants}, also known as {@book goliaths|TDCSR|4|Half-Giants}, and a mighty force for good on the {@book Dividing Plains|TDCSR|3|Dividing Plains}. The herd was once conquered by a goliath tyrant named Kevdak, then formed anew after Kevdak was eventually defeated by Vox Machina. Free of Kevdak's martial cruelty, the Rivermaw see it as their duty to prevent any such tyrant from conquering the {@book Dividing Plains|TDCSR|3|Dividing Plains} ever again.",
+							"Though most members of the {@book Rivermaw herd|TDCSR|3|Rivermaw Herd} are {@book goliaths|TDCSR|4|Half-Giants}, their ranks include people of all races who wish to live beyond the stone walls of {@book Westruun|TDCSR|3|Westruun} and the palisades of plains towns like {@book Turst Fields|TDCSR|3|Turst Fields}. {@book Orcs|TDCSR|4|orcs}, {@book humans|TDCSR|4|humans}, {@book halflings|TDCSR|4|halflings}, and {@book gnolls|TDCSR|6|gnolls} make up most of the rest of the herd's warriors. Most of those warriors value strength and endurance over other qualities, but the brawlers and stormborn of the Rivermaw are better known for cunning, intelligence, strategy, and a unique attunement to the mighty thunder of the {@deity The Stormlord|Exandria|TDCSR|Stormlord}."
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Rivermaw Brawler",
+								"page": 253,
+								"entries": [
+									"Many children in the {@book Rivermaw herd|TDCSR|3|Rivermaw Herd} get into friendly brawls, but only the truly dedicated learn the art of fist fighting. Rivermaw brawlers usually lead the charge on the battlefield, using their exceptional strength, speed, and cunning to throw an enemy vanguard into chaos.",
+									"Beyond the {@book Dividing Plains|TDCSR|3|Dividing Plains}, brawlers trained by the Rivermaw can be found in noble adventuring parties, working for the {@book Clasp|TDCSR|2|The Clasp} as muscle, in underground fighting rings, and as personal bodyguards. In {@book Emon|TDCSR|3|Emon, the City of Fellowship}, the most famous fist fighters make a name for themselves within the {@book Brawler's League|TDCSR|2|Brawler's League} or the {@book Godsbrawl|TDCSR|3|10. Godsbrawl Ring}, representing the {@deity The Stormlord|Exandria|TDCSR|Stormlord} in that annual holy tournament."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/TDCSR/RivermawWarriorsFluff.webp"
+						},
+						"credit": "{@link Claudia Ianniciello|https://artstation.com/claudiasg}",
+						"altText": "A male and female goliath stand next to each other. The male is bald, clad in leather and metal armor and bears a greataxe that crackles with green, arcane energy. The female has long, dark hair and wears spiked gauntlets."
+					}
+				]
+			},
+			"damageTags": [
+				"S"
+			]
+		},
+		{
+			"name": "Huge Gelatin-eating Boar",
+			"source": "Jama",
+			"page": 323,
+			"basicRules": true,
+			"size": [
+				"H"
+			],
+			"type": "beast",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "15d10 + 120",
+				"average": 202
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 30,
+			"dex": 14,
+			"con": 26,
+			"int": 2,
+			"wis": 7,
+			"cha": 5,
+			"passive": 8,
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the boar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 28 ({@damage 8d6}) slashing damage. If the target is a creature, it must succeed on a {@dc 21} Strength saving throw or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Relentless (Recharges after a Short or Long Rest)",
+					"entries": [
+						"If the boar takes 10 damage or less that would reduce it to 0 hit points, it is reduced to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Tusk",
+					"entries": [
+						"{@atk mw} {@hit 13} to hit, reach 5 ft., one target. {@h}40 ({@damage 8d6 + 10}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"grassland",
+				"hill"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/giant-boar.mp3"
+			},
+			"traitTags": [
+				"Charge"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"prone"
+			],
+			"tokenUrl": "https://5e.tools/img/MM/Giant Boar.png",
+			"resist": [
+				"acid"
+			],
+			"bonus": [
+				{
+					"name": "Trample",
+					"entries": [
+						"Trample any foes the Boar moves thrrough, they have to make DC21 STR save or take {@dice 4d6} bludgeoning and fall {@condition prone}, or DC21 Dex save to only fall {@condition prone}. Succeeding on the STR save, reduces the speed of the Boar to 0 until end of turn."
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"S"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Nagrim's Ghoul",
+			"source": "Jama",
+			"page": 148,
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": "undead",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				14
+			],
+			"hp": {
+				"formula": "7d8 + 14",
+				"average": 45
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 17,
+			"dex": 18,
+			"con": 14,
+			"int": 7,
+			"wis": 10,
+			"cha": 6,
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 10,
+			"immune": [
+				"poison"
+			],
+			"conditionImmune": [
+				"charmed",
+				"exhaustion",
+				"poisoned"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "5",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Nagrim's ghoul makes one Claw and one Bite attack."
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one creature. {@h}11 ({@damage 2d6 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}13 ({@damage 2d8 + 4}) slashing damage. If the target is a creature other than an elf or undead, it must succeed on a {@dc 11} Constitution saving throw or be {@condition paralyzed} for 1 minute. The target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success."
+					]
+				}
+			],
+			"environment": [
+				"swamp",
+				"underdark",
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/ghoul.mp3"
+			},
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"conditionInflict": [
+				"paralyzed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Ghoul",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Ghoul",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Ghouls roam the night in packs, driven by an insatiable hunger for humanoid flesh.",
+									{
+										"name": "Devourers of Flesh",
+										"type": "entries",
+										"entries": [
+											"Like maggots or carrion beetles, ghouls thrive in places rank with decay and death. A ghoul haunts a place where it can gorge on dead flesh and decomposing organs. When it can't feed on the dead, it pursues living creatures and attempts to make corpses of them. Though they gain no nourishment from the corpses they devour, ghouls are driven by an unending hunger that compels them to consume. A ghoul's undead flesh never rots, and this monster can persist in a crypt or tomb for untold ages without feeding."
+										]
+									},
+									{
+										"name": "Abyssal Origins",
+										"type": "entries",
+										"entries": [
+											"Ghouls trace their origins to the Abyss. Doresain, the first of their kind, was an elf worshiper of Orcus. Turning against his own people, he feasted on humanoid flesh to honor the Demon Prince of Undeath. As a reward for his service, Orcus transformed Doresain into the first ghoul. Doresain served Orcus faithfully in the Abyss, creating ghouls from the demon lord's other servants until an incursion by Yeenoghu, the demonic Gnoll Lord, robbed Doresain of his abyssal domain. When Orcus would not intervene on his behalf, Doresain turned to the elf gods for salvation, and they took pity on him and helped him escape certain destruction. Since then, elves have been immune to the ghouls' paralytic touch."
+										]
+									},
+									{
+										"name": "Ghasts",
+										"type": "entries",
+										"entries": [
+											"Orcus sometimes infuses a ghoul with a stronger dose of abyssal energy, making a ghast. Whereas ghouls are little more than savage beasts, a ghast is cunning and can inspire a pack of ghouls to follow its commands."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Ghoul.webp"
+						}
+					}
+				]
+			},
+			"traitTags": [
+				"Keen Senses"
+			],
+			"trait": [
+				{
+					"name": "Keen Smell",
+					"entries": [
+						"Nagrim's ghoul has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"resist": [
+				"necrotic"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"constitution"
+			]
+		},
+		{
+			"name": "Warrior of Aseroth",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "Jama",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"Icy heavy armor + shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d10 + 28",
+				"average": 66
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 18,
+			"int": 10,
+			"wis": 10,
+			"cha": 14,
+			"passive": 13,
+			"cr": "5",
+			"skill": {
+				"athletics": "+10",
+				"intimidation": "+8",
+				"perception": "+3"
+			},
+			"save": {
+				"con": "+7",
+				"str": "+7"
+			},
+			"immune": [
+				"cold"
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical sources",
+					"cond": true
+				},
+				{
+					"resist": []
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Cultist of Aseroth - Cold Blooded",
+					"entries": [
+						"Warrior of Aseroth is immute to being {@condition frightened}, {@condition charmed} and has immunity to Cold damage."
+					]
+				},
+				{
+					"name": "Heavy",
+					"entries": [
+						"Warrior of Aseroth has advantage on saves and checks for effects that would knock it {@condition prone}, cant be moved when {@condition grappled} and has disadvantage on climbing checks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multi attack",
+					"entries": [
+						"Warrior of Aseroth makes two longsword attacks"
+					]
+				},
+				{
+					"name": "longsword",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage, plus 5 ({@damage 1d10}) cold damage."
+					]
+				},
+				{
+					"name": "Chill to the bone",
+					"entries": [
+						"Target creature within 60ft makes a DC13 Constituion save or recieves {@damage 2d10} cold damage and have their speed half until the end of their next turn, the target suffers no effects on a succesful save."
+					]
+				},
+				{
+					"name": "Proclaim despair (once per day)",
+					"entries": [
+						"The warrior makes a confession of utter despair, all creatures that can hear and understand it within 30ft must make a DC13 Wisdom saving throw or have their speed reduced to zero and become {@condition incapacitated} until the end of their next turn."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"attachedItems": [
+				"longsword|phb"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The warrior is granted spellcasting abilities from their patron.",
+						"DC = 13, attack bonus +5"
+					],
+					"daily": {
+						"1e": [
+							"{@spell fear}",
+							"{@spell rime's binding ice|FTD}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"C",
+				"S"
+			],
+			"damageTagsSpell": [
+				"C"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Frost Hound",
+			"source": "Jama",
+			"page": 182,
+			"basicRules": true,
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 45,
+				"formula": "7d8 + 14"
+			},
+			"speed": {
+				"walk": 50
+			},
+			"str": 17,
+			"dex": 12,
+			"con": 14,
+			"int": 6,
+			"wis": 13,
+			"cha": 6,
+			"skill": {
+				"perception": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 15,
+			"immune": [
+				"cold"
+			],
+			"languages": [
+				"understands Infernal but can't speak it"
+			],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Keen Hearing and Smell",
+					"entries": [
+						"The hound has advantage on Wisdom ({@skill Perception}) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The hound has advantage on an attack roll against a creature if at least one of the hound's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage plus 6 ({@damage 1d10}) cold damage."
+					]
+				},
+				{
+					"name": "Fire Breath {@recharge 5}",
+					"entries": [
+						"The hound exhales fire in a 15-foot cone. Each creature in that area must make a {@dc 12} Dexterity saving throw, taking 22 ({@damage 4d10}) cold damage on a failed save, or half as much damage on a successful one."
+					]
+				}
+			],
+			"environment": [
+				"mountain",
+				"underdark"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/hell-hound.mp3"
+			},
+			"traitTags": [
+				"Keen Senses",
+				"Pack Tactics"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Breath Weapon"
+			],
+			"languageTags": [
+				"CS",
+				"I"
+			],
+			"miscTags": [
+				"MW",
+				"AOE"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Hell Hound",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Hell Hound",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Monstrous, fire-breathing fiends that take the form of powerful dogs, hell hounds are found on the battlefields of Acheron and throughout the Lower Planes. On the Material Plane, hell hounds are most commonly seen in service to devils, fire giants, and other evil creatures that use them as guard animals and companions.",
+									{
+										"name": "Burning Hunger",
+										"type": "entries",
+										"entries": [
+											"Hell hounds hunt in packs, feeding on any creature that appears edible. They avoid potentially dangerous foes in favor of targeting the weakest prey with their savage bite and fiery breath, demonstrating a relentless determination as they pursue that prey to the bitter end.",
+											"When hell hounds feed, the flesh they consume stokes the infernal fires that burn within them. When a hell hound dies, that fire consumes the creature's remains in a billowing eruption of smoke and blazing embers, leaving nothing behind but scorched tufts of black fur."
+										]
+									},
+									{
+										"name": "Evil to the Core",
+										"type": "entries",
+										"entries": [
+											"Hell hounds are smarter than mundane beasts, and their lawful nature makes them good at following orders. However, a hell hound's evil disposition means that the creature can't be trained to be anything other than a ruthless killer. If a hell hound isn't allowed to indulge its malevolent hunger, it quickly abandons or turns against its master."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Hell Hound.webp"
+						},
+						"credit": "Conceptopolis"
+					}
+				]
+			},
+			"damageTags": [
+				"C",
+				"P"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Choldrith Archpriest",
+			"source": "Jama",
+			"page": 77,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "monstrosity",
+				"tags": [
+					"cleric"
+				]
+			},
+			"alignment": [
+				"C",
+				"E"
+			],
+			"alignmentPrefix": "Typically ",
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"web armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 91,
+				"formula": "14d8 + 28"
+			},
+			"speed": {
+				"walk": 30,
+				"climb": 30
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 14,
+			"int": 11,
+			"wis": 16,
+			"cha": 10,
+			"skill": {
+				"athletics": "+7",
+				"religion": "+3",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"languages": [
+				"Undercommon"
+			],
+			"cr": "7",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The choldrith casts one of the following spells, using Wisdom as the spellcasting ability (spell save {@dc 14}):"
+					],
+					"will": [
+						"{@spell guidance}",
+						"{@spell thaumaturgy}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell bane}",
+							"{@spell conjure animals} (2 {@creature giant spider|mm|giant spiders})",
+							"{@spell hold person}",
+							"{@spell ray of enfeeblement}",
+							"{@spell ray of sickness}"
+						]
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"The choldrith has advantage on saving throws against being {@condition charmed}, and magic can't put the choldrith to sleep."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The choldrith can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the choldrith has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Web Sense",
+					"entries": [
+						"While in contact with a web, the choldrith knows the exact location of any other creature in contact with the same web."
+					]
+				},
+				{
+					"name": "Web Walker",
+					"entries": [
+						"The choldrith ignores movement restrictions caused by webbing."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}9 ({@damage 2d4 + 4}) piercing damage plus 10 ({@damage 3d6}) poison damage."
+					]
+				},
+				{
+					"name": "Web {@recharge 5}",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 30/60 ft., one Large or smaller creature. {@h}The target is {@condition restrained} by webbing. As an action, the {@condition restrained} target can make a {@dc 13} Strength check, bursting the webbing on a success. The webbing can also be attacked and destroyed (AC 10; 5 hit points; vulnerability to fire damage; immunity to bludgeoning, poison, and psychic damage)."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Spectral Dagger (Recharges after a Short or Long Rest)",
+					"entries": [
+						"The choldrith conjures a floating, spectral dagger within 60 feet of itself. The choldrith can make a melee spell attack ({@hit 6} to hit) against one creature within 5 feet of the dagger. On a hit, the target takes 12 ({@damage 2d8 + 3}) force damage.",
+						"The dagger lasts for 1 minute. As a bonus action on later turns, the choldrith can move the dagger up to 20 feet and repeat the attack against one creature within 5 feet of the dagger."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/choldrith.mp3"
+			},
+			"attachedItems": [
+				"dagger|phb"
+			],
+			"traitTags": [
+				"Fey Ancestry",
+				"Spider Climb",
+				"Sunlight Sensitivity",
+				"Web Sense",
+				"Web Walker"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"U"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"MLW",
+				"THW"
+			],
+			"conditionInflict": [
+				"restrained"
+			],
+			"conditionInflictSpell": [
+				"paralyzed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Choldrith",
+				"source": "MPMM"
+			},
+			"fluff": {
+				"name": "Choldrith",
+				"source": "MPMM",
+				"entries": [
+					"Choldriths are monstrous spiderlike creatures originally created to serve Lolth. They rule colonies of chitines (in this book) and lead them into battle in Lolth's war against her enemies.",
+					"When devotees of Lolth created the first chitines, she watched as her followers used arcane magic and demonic powers and invoked her aid for the divine spark needed to ensure the subjects' survival, expecting to see these new abominations dedicated solely to her, but the devotees performed no such ritual. As revenge for the devotees' betrayal, the Spider Queen manipulated the creation rituals so that they sometimes created choldriths instead of chitines.",
+					"At first, these devotees were unaware that the new creatures, which they dubbed choldriths, were signs of Lolth's wrath. Instead, they were pleased, because choldriths could lay eggs that birthed more chitines (and the rare choldrith) and could direct the chitines in their work. But the devotees soon realized their mistake—choldriths belonged to Lolth, body and soul. Choldriths whispered to the chitines of their adoration of the Spider Queen and their enmity against their creators, and led them in a successful revolt.",
+					"Choldriths are born with a mystical connection to Lolth, which gives them divine magic. They also make up the ruling caste of most chitine colonies. A colony can support numerous choldriths, who serve as commanders, priests, and supervisors. The choldriths continually jockey for position, although they rarely confront one another in a way that puts the colony at risk. The colony is ruled by a sovereign, who determines which colony members perform which tasks, including whether a choldrith is permitted to lay eggs. Sometimes a choldrith ruler receives a vision from Lolth that inspires the entire colony into some grand, often violent, action."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MPMM/Choldrith.webp"
+						},
+						"credit": "Shawn Wood"
+					}
+				]
+			},
+			"damageTags": [
+				"I",
+				"O",
+				"P"
+			],
+			"damageTagsSpell": [
+				"I"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Kuo-toa Priest of the Deep",
+			"source": "Jama",
+			"page": 199,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"kuo-toa"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor",
+						"{@item shield|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "9d8 + 9",
+				"average": 49
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 16,
+			"dex": 10,
+			"con": 13,
+			"int": 12,
+			"wis": 16,
+			"cha": 8,
+			"skill": {
+				"perception": "+6",
+				"stealth": "+3"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 16,
+			"languages": [
+				"Undercommon"
+			],
+			"cr": "7",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The kuo-toa can breathe air and water."
+					]
+				},
+				{
+					"name": "Otherworldly Perception",
+					"entries": [
+						"The kuo-toa can sense the presence of any creature within 30 feet of it that is {@condition invisible} or on the Ethereal Plane. It can pinpoint such a creature that is moving."
+					]
+				},
+				{
+					"name": "Slippery",
+					"entries": [
+						"The kuo-toa has advantage on ability checks and saving throws made to escape a grapple."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Water Camouflage",
+					"entries": [
+						"Kuo-Toa have advantage on stealth checks made under water."
+					]
+				},
+				{
+					"name": "Cultist of Igthuun - Linked Telepathy",
+					"entries": [
+						"All cultists of Igthuun can communicate telepathically with each other within 100ft range"
+					]
+				},
+				{
+					"name": "Cultist of Igthuun - Psychic Shielding",
+					"entries": [
+						"All cultists of Igthuun have immunity to psychic damage and advantage on all Wisdom, Charisma and Intelligence saving throws"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}8 ({@damage 2d4 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Summon Tentacle",
+					"entries": [
+						"The Priest summons a 5ft spectral tentacle, it is immobile, has 20hp 15AC and immunity to nonmagical and cold damage. After that all tentacles attack a target within 15ft with  {@hit 6} to hit dealing 15 ({@damage 3d8}) cold damage."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"fluff": {
+				"name": "Kuo-toa",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Kuo-toa are degenerate fishlike humanoids that once inhabited the shores and islands of the surface world. Long ago humans and their ilk drove the kuo-toa underground, where they dwell in madness and everlasting night. Kuo-toa can no longer abide daylight.",
+									{
+										"name": "Mad Slaves",
+										"type": "entries",
+										"entries": [
+											"At the height of the illithid empire, the mind flayers captured kuo-toa by the thousands and forced them into bondage. The kuo-toa were simple creatures, never meant to endure the oppressive mental force the illithids unleashed against them. By the time the mind flayers abandoned them, the prolonged psychic subjugation endured by the kuo-toa had driven them mad.",
+											"Their minds shattered beyond repair, the kuo-toa adopted a religious fervor, inventing gods to protect them against threats. Most notable of these threats are the drow, which have slain the kuo-toa on sight since the days when the two races first met."
+										]
+									},
+									{
+										"name": "God Makers",
+										"type": "entries",
+										"entries": [
+											"Kuo-toa worship gods of their own insane creation, but if enough kuo-toa believe that a god is real, the energy of their collective subconscious can cause that god to manifest as a physical entity. The form a kuo-toa god takes depends on the inspiration for its divine image, and is usually random or nonsensical.",
+											"One of the most revered gods of the kuo-toa is Blibdoolpoolp the Sea Mother, who takes the form of a female human with a crayfish head, a crayfish's claws, and an articulated shell covering her shoulders. Blibdoolpoolp was likely invented by a kuo-toa that improved on a broken human statue by adding the limbs and head of a crustacean. In sudden awe of its handiwork, it then named the resulting form a god.",
+											"Kuo-toa that cross paths with an aboleth often find themselves worshiping it as a god, their madness blinding them to the fact that the aboleth is merely using them for its own nefarious ends."
+										]
+									},
+									{
+										"name": "Theocratic Rulers",
+										"type": "entries",
+										"entries": [
+											"Kuo-toa archpriests are surrounded by fanatical devotees of their faith. The archpriest of a kuo-toa domain demands that all its subjects worship a specific god. An archpriest's mad belief in its god is so fervent that it manifests the powers of a high cleric. The archpriest can also bestow spells to devout underlings called whips. One or more of these whips are also the archpriest's children, and their primary role in kuo-toan society is to fight to the death to claim the throne when the archpriest dies. If a whip displeases the archpriest, the archpriest can strip it of its spellcasting ability, if not its life.",
+											"The archpriest's decrees are enforced by monitors, devout kuo-toa that act as the archpriest's eyes and ears. Monitors are deadly hand-to-hand combatants, and lesser kuo-toa live in fear of them.",
+											"Kuo-toa Gear. Many weapons of the kuo-toa are designed to capture rather than kill. Nets are common, though some carry pincer staffs (also called mancatchers) designed to trap and immobilize foes. Kuo-toa warriors also treat their shields with a sticky goo that catches incoming weapons.",
+											"In general, kuo-toa don't like the weight of armor on their slippery bodies and rely on their natural rubbery hides for protection. However, they like to wear jewelry made from scavenged bones, shells, pearls, gems, and carapace fragments."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Variant: Kuo-toa Monitor",
+										"entries": [
+											"A kuo-toa monitor has a challenge rating of 3 (700 XP). It has the same statistics as a kuo-toa whip except that it adds its Wisdom modifier to its Armor Class (AC 13), loses the Spellcaster trait, and replaces the whip's action options with the following action options.",
+											{
+												"name": "Multiattack",
+												"entries": [
+													"The kuo-toa makes one bite attack and two unarmed strikes."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Bite",
+												"entries": [
+													"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 4 ({@damage 1d4 + 2}) piercing damage."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Unarmed Strike",
+												"entries": [
+													"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 ({@damage 1d6 + 2}) bludgeoning damage + 3 ({@damage 1d6}) lightning damage, and the target can't take reactions until the end of the kuo-toa's next turn."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "insetReadaloud",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"They invent their own gods... the very definition of insanity."
+										],
+										"by": "Sabal Mizzrym of Menzoberranzan"
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Kuo-toa.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Kuo-toa.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/kuo-toa.mp3"
+			},
+			"traitTags": [
+				"Amphibious",
+				"Camouflage",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"languageTags": [
+				"U"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"immune": [
+				"psychic"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Priest of the Deep casts one of the following spells suing wisdom as their spellcasting ability. {@dc 14}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell hold person}",
+							"{@spell rime's binding ice|FTD}",
+							"{@spell sleet storm}",
+							"{@spell tidal wave|XGE}",
+							"{@spell watery sphere|XGE}"
+						]
+					},
+					"ability": "wis",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"C",
+				"P"
+			],
+			"damageTagsSpell": [
+				"B",
+				"C"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Peregrine",
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"halfling"
+				]
+			},
+			"source": "Jama",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				17
+			],
+			"hp": {
+				"formula": "1d8 + 1",
+				"average": 5
+			},
+			"speed": {
+				"walk": 45
+			},
+			"str": 10,
+			"dex": 18,
+			"con": 12,
+			"int": 10,
+			"wis": 16,
+			"cha": 10,
+			"passive": 13,
+			"cr": "5"
+		},
+		{
+			"name": "Heart of Rot",
+			"size": [
+				"H"
+			],
+			"type": "aberration",
+			"source": "Jama",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				13
+			],
+			"hp": {
+				"formula": "25d10 + 175",
+				"average": 312
+			},
+			"speed": {},
+			"str": 16,
+			"dex": 0,
+			"con": 24,
+			"int": 10,
+			"wis": 14,
+			"cha": 8,
+			"passive": 12,
+			"cr": "5",
+			"legendary": [
+				{
+					"name": "Spore rot",
+					"entries": [
+						"The area in 15ft around the Heart becomes obscured. Each creature that ends its turn in the take {@damage 1d8} necrotic damage."
+					]
+				},
+				{
+					"name": "Spawn",
+					"entries": [
+						"Two rotting thornies appear."
+					]
+				},
+				{
+					"name": "Enfeeling spores",
+					"entries": [
+						"Each creature within 60 feat of the Heart of Rot must make a Contitution saving throw {@dc 13} or be {@condition poisoned} for 1 minute, it can repeat the saving throw at the end of each turn.."
+					]
+				},
+				{
+					"name": "Spill Acid",
+					"entries": [
+						"Each creature within 5ft of the must make a {@dc 13} Dexterity saving throw or take {@damage 4d8} acid damage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Heart of Rot makes two spore attacks and an attack with each tentacle."
+					]
+				},
+				{
+					"name": "Spore catapult",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 120 ft., one target. {@h}5 ({@damage 1d10}) necrotic damage."
+					]
+				},
+				{
+					"name": "Tentacle",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 15 ft., one target. {@h}8 ({@damage 1d6 + 3}) bludgeoning damage, the target becomes {@condition grappled}. If the tentacle is holding a creature it can instead force it to make a {@dc 12} Stregth saving throw or throw it within. While in the Heart a creature takes {@dice 2d6} acid and {@damage 2d8} necrotic damage at the start of its turn. A creature can make a {@dc 10} dexterity check to get out as an action."
+					]
+				}
+			],
+			"miscTags": [
+				"RW",
+				"MW",
+				"RCH"
+			],
+			"conditionInflict": [
+				"grappled",
+				"poisoned"
+			],
+			"actionTags": [
+				"Multiattack",
+				"Tentacles"
+			],
+			"resist": [
+				"necrotic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"frightened",
+				"grappled",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"senses": [
+				"blindsight 30ft",
+				"blindsight 20 ft."
+			],
+			"senseTags": [
+				"B"
+			],
+			"trait": [
+				{
+					"name": "Rooted building",
+					"entries": [
+						"Cannot move or be moved.",
+						"Doesnt have disadvantage on ranged attacks from enemies being in reach."
+					]
+				}
+			],
+			"immune": [
+				"piercing"
+			],
+			"damageTags": [
+				"B",
+				"N"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Rotting Thorny",
+			"source": "Jama",
+			"page": 197,
+			"size": [
+				"M"
+			],
+			"type": "plant",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 27,
+				"formula": "5d8 + 5"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 12,
+			"con": 13,
+			"int": 2,
+			"wis": 10,
+			"cha": 6,
+			"skill": {
+				"perception": "+4",
+				"stealth": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"resist": [
+				"piercing"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Plant Camouflage",
+					"entries": [
+						"The thorny has advantage on Dexterity ({@skill Stealth}) checks it makes in any terrain with ample obscuring plant life."
+					]
+				},
+				{
+					"name": "Thorny Body",
+					"entries": [
+						"At the start of its turn, the thorny deals 2 ({@damage 1d4}) piercing damage to any creature grappling it."
+					]
+				},
+				{
+					"name": "Rotten Fortitude",
+					"entries": [
+						"If damage reduces the thorny to 0 hit points, it must make a Constitution saving throw with a DC of the damage taken, unless the damage is lighting or from a critical hit. On a success, the vegepygmy thorny hunter drops to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 1}) piercing damage  and {@dice 1d6} necrotic."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"swamp"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/thorny.mp3"
+			},
+			"traitTags": [
+				"Regeneration",
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Thorny",
+				"source": "VGM"
+			},
+			"fluff": {
+				"name": "Thorny",
+				"source": "VGM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Vegepygmies are fungus creatures that live in simple tribal units, hunting for sustenance and spreading the spores from which they reproduce.",
+											{
+												"name": "Primitive Plants",
+												"entries": [
+													"Vegepygmies, also called mold folk or moldies, inhabit dark areas that are warm and wet, so they are most commonly found underground or in dense forests where little sunlight penetrates. A vegepygmy instinctively feels kinship with other plant and fungus creatures, and thus vegepygmy tribes coexist well with creatures such as myconids, shriekers, and violet fungi.",
+													"Although they prefer to eat fresh meat, bone, and blood, vegepygmies can absorb nutrients from soil and many sorts of organic matter, meaning that they rarely go hungry. A vegepygmy can hiss and make other noises by forcing air through its mouth, but it can't speak in a conventional sense. Among themselves, vegepygmies communicate by hissing, gestures, and rhythmic tapping on the body. Vegepygmies build and craft little; any gear they have is acquired from other creatures or built by copying simple construction they have witnessed.",
+													"As a vegepygmy ages, it grows tougher and develops spore clusters on its body. Spore-bearing vegepygmies are deferred to by other vegepygmies, so outsiders refer to such vegepygmies as chiefs. A chief can expel its spores in a burst, infecting nearby creatures. If a creature dies while infected, its corpse produces vegepygmies the same way russet mold does.",
+													"No one knows for sure where russet mold came from. One historical account tells of adventurers in a forbidding mountain range discovering russet mold and vegepygmies in a peculiar metal dungeon full of strange life. Another story says that explorers found russet mold in a crater left by a falling star, with vegepygmies infesting the dense jungle nearby."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Mold Begets Mold",
+												"entries": [
+													"Vegepygmies originate from the remains left behind when a humanoid or a giant is killed by russet mold. One or more vegepygmies emerge from the corpse a day later. If a beast such as a dog or a bear dies from russet mold, the result is a bestial moldie called a thorny result instead of a humanoid-shaped vegepygmy. Thornies are less intelligent than vegepygmies, but have greater size and ferocity, as well as a thorn-covered body."
+												],
+												"type": "entries"
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Russet Mold",
+										"entries": [
+											"The fungus known as russet mold is reddish-brown in color and found only in places that are dark, warm, and wet. Russet mold that spreads out across a metal object can be mistaken for natural rust, and a successful DC 15 Intelligence ({@skill Nature}) or Wisdom ({@skill Survival}) check is required to identify it accurately by sight in such a case.",
+											"Any creature that comes within 5 feet of russet mold must make a DC 13 Constitution saving throw as the mold emits a puff of spores. On a failed save, the creature becomes {@condition poisoned}. While {@condition poisoned} in this way, the creature takes 7 ({@damage 2d6}) poison damage at the start of each of its turns, sprouting mold as it takes damage. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Any magic that neutralizes poison or cures disease kills the infestation. A creature reduced to 0 hit points by the mold's poison damage dies. If the dead creature is a beast, a giant, or a humanoid, one or more newborn vegepygmies emerge from its body 24 hours later: one newborn from a Small corpse, two from a Medium corpse, four from a Large corpse, eight from a Huge corpse, or sixteen from a Gargantuan corpse.",
+											"Russet mold can be hard to kill, since weapons and most types of damage do it no harm. Effects that deal acid, necrotic, or radiant damage kill 1 square foot of russet mold per 1 damage dealt. A pound of salt, a gallon of alcohol, or a magical effect that cures disease kills russet mold in a square area that is 10 feet on a side. Sunlight kills any russet mold in the light's area."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/VGM/Vegepygmy.webp"
+						},
+						"credit": "Jim Nelson"
+					}
+				]
+			},
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Giant Rotten Vegepygmy Thorny Hunter",
+			"source": "Jama",
+			"page": 219,
+			"size": [
+				"M"
+			],
+			"type": "plant",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d8 + 90",
+				"average": 135
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 24,
+			"dex": 14,
+			"con": 28,
+			"int": 2,
+			"wis": 10,
+			"cha": 6,
+			"skill": {
+				"perception": "+6",
+				"stealth": "+4",
+				"survival": "+6"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 16,
+			"resist": [
+				"necrotic"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Plant Camouflage",
+					"entries": [
+						"The vegepygmy has advantage on Dexterity ({@skill Stealth}) checks it makes in any terrain with ample obscuring vegetation."
+					]
+				},
+				{
+					"name": "Thorny Body",
+					"entries": [
+						"At the start of its turn, the vegepygmy deals 2 ({@damage 1d4}) piercing damage to any creature grappling it."
+					]
+				},
+				{
+					"name": "Rotten Fortitude",
+					"entries": [
+						"If damage reduces the thorny to 0 hit points, it must make a Constitution saving throw with a DC of the damage taken, unless the damage is lighting or from a critical hit. On a success, the vegepygmy thorny hunter drops to 1 hit point instead."
+					]
+				},
+				{
+					"name": "Trampling Charge (Mammoth)",
+					"entries": [
+						"If the rotten vegepygmy thorny hunter moves at least 20 feet straight toward a creature and then hits it with a gore attack on the same turn, that target must succeed on a {@dc 18} Strength saving throw or be knocked {@condition prone}. If the target is {@condition prone}, the rotten vegepygmy thorny hunter can make one stomp attack against it as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}21 ({@damage 4d6 + 7}) piercing damage.If the target is a creature, it must succeed on a {@dc 18} Strength saving throw or have the {@condition prone} condition."
+					]
+				},
+				{
+					"name": "Stomp",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}21 ({@damage 4d6 + 7}) bludgeoning damage."
+					]
+				}
+			],
+			"traitTags": [
+				"Pack Tactics",
+				"Regeneration",
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Vegepygmy Thorny Hunter",
+				"source": "QftIS"
+			},
+			"fluff": {
+				"name": "Vegepygmy Thorny Hunter",
+				"source": "QftIS",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Thorny hunters are bestial vegepygmies derived from the corpses of bears, dogs, and other quadrupedal Beasts. Thorny hunters act like bloodhounds, following their master's orders to hunt prey with deadly ferocity."
+						]
+					},
+					{
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Vegepygmies",
+								"entries": [
+									"Also called mold folk, vegepygmies are fungal creatures that spring forth from the body of a Humanoid or Giant killed by russet mold, a poisonous fungus rumored to have originated from beyond the stars.",
+									"Vegepygmies gather in small bands, communicating with a combination of gestures, hisses, and rhythmic taps. While vegepygmies can sustain themselves by absorbing nutrients from soil and other organic matter, they prefer a carnivorous diet achieved through hunting and scavenging. Vegepygmies can live indefinitely so long as the climate remains hospitable to their fungal bodies.",
+									"To learn more about vegepygmies, see Monsters of the Multiverse."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/QftIS/Vegepygmy.webp"
+						}
+					}
+				]
+			},
+			"conditionInflict": [
+				"prone"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"savingThrowForced": [
+				"strength"
+			]
+		},
+		{
+			"name": "Rotting Vegepygmy Guard",
+			"source": "Jama",
+			"page": 252,
+			"size": [
+				"S"
+			],
+			"type": "plant",
+			"alignment": [
+				"N"
+			],
+			"alignmentPrefix": "Typically ",
+			"ac": [
+				{
+					"ac": 13,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 13,
+				"formula": "3d6 + 3"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 7,
+			"dex": 16,
+			"con": 13,
+			"int": 6,
+			"wis": 11,
+			"cha": 7,
+			"skill": {
+				"perception": "+2",
+				"stealth": "+4"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 12,
+			"resist": [
+				"piercing"
+			],
+			"languages": [
+				"Vegepygmy"
+			],
+			"cr": "1/4",
+			"trait": [
+				{
+					"name": "Plant Camouflage",
+					"entries": [
+						"The vegepygmy has advantage on Dexterity ({@skill Stealth}) checks it makes in any terrain with ample obscuring vegetation."
+					]
+				},
+				{
+					"name": "Rotten Fortitude",
+					"entries": [
+						"If damage reduces the thorny to 0 hit points, it must make a Constitution saving throw with a DC of the damage taken, unless the damage is lighting or from a critical hit. On a success, the vegepygmy thorny hunter drops to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claws",
+					"entries": [
+						"{@atk mw} {@hit 5 to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 3}) slashing damage}"
+					]
+				},
+				{
+					"name": "Sling",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 30/120 ft., one target. {@h}4 ({@damage 1d4 + 3}) bludgeoning damage."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"swamp"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/vegepygmy.mp3"
+			},
+			"attachedItems": [
+				"sling|phb"
+			],
+			"traitTags": [
+				"Regeneration"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"OTH"
+			],
+			"miscTags": [
+				"MW",
+				"RW"
+			],
+			"hasFluff": true,
+			"token": {
+				"name": "Vegepygmy",
+				"source": "MPMM"
+			},
+			"fluff": {
+				"name": "Vegepygmy",
+				"source": "MPMM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Typical vegepygmies originate from the remains left behind when a Humanoid or a Giant is killed by {@hazard russet mold|VGM}. One or more vegepygmies emerge from the corpse a day later."
+						]
+					},
+					{
+						"type": "section",
+						"name": "Vegepygmies",
+						"entries": [
+							"Vegepygmies are fungus creatures that live in simple bands, hunting for sustenance and spreading the spores by which they reproduce. Also called mold folk or moldies, vegepygmies inhabit dark, moist areas, so they're most commonly found underground or in forests where little sunlight penetrates. A vegepygmy feels kinship with other plant and fungus creatures, and thus vegepygmy bands coexist well with creatures such as {@creature myconid adult||myconid adults}, {@creature shrieker||shriekers}, and {@creature violet fungus||violet fungi}.",
+							"Although they prefer to eat fresh meat, bone, and blood, vegepygmies can absorb nutrients from soil and many sorts of organic matter, so they rarely go hungry. A vegepygmy can hiss and make other noises by forcing air through its mouth, but it can't speak in a conventional sense. Among themselves, vegepygmies communicate by hissing, gestures, and tapping. Vegepygmies build and craft little; any gear they have is acquired from other creatures or built by copying simple construction they have witnessed."
+						]
+					}
+				]
+			},
+			"damageTags": [
+				"B",
+				"S"
+			]
+		},
+		{
+			"name": "God",
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"source": "Jama",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				20
+			],
+			"hp": {
+				"formula": "50d8",
+				"average": 225
+			},
+			"speed": {
+				"walk": 30,
+				"fly": {
+					"number": 0,
+					"condition": "hover"
+				},
+				"canHover": true
+			},
+			"str": 22,
+			"dex": 10,
+			"con": 22,
+			"int": 16,
+			"wis": 18,
+			"cha": 18,
+			"passive": 22,
+			"cr": "9",
+			"skill": {
+				"athletics": "+10",
+				"perception": "+12"
+			},
+			"resist": [
+				"cold",
+				"necrotic"
+			],
+			"immune": [
+				"fire",
+				"psychic",
+				"radiant"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"unconscious"
+			],
+			"senses": [
+				"truesight 90 ft."
+			],
+			"senseTags": [
+				"U"
+			],
+			"save": {
+				"con": "+10",
+				"wis": "+8",
+				"str": "+10"
+			},
+			"action": [
+				{
+					"name": "Sword of the sun",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}10 ({@damage 1d8 + 6}) slashing damage, plus 4 ({@damage 1d8}) radiant damage."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Horrik makes two sword attacks"
+					]
+				}
+			],
+			"miscTags": [
+				"MW"
+			],
+			"legendary": [
+				{
+					"name": "Strike (1 action)",
+					"entries": [
+						"Horrik makes one sword attack."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"R",
+				"S"
+			]
+		},
+		{
+			"name": "Kuo-toa Linebreaker",
+			"source": "Jama",
+			"page": 199,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"kuo-toa"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"makeshift split heavy armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "10d10 + 30",
+				"average": 85
+			},
+			"speed": {
+				"walk": 30,
+				"swim": 30
+			},
+			"str": 18,
+			"dex": 10,
+			"con": 17,
+			"int": 11,
+			"wis": 10,
+			"cha": 8,
+			"skill": {
+				"perception": "+3",
+				"athletics": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 13,
+			"immune": [
+				"psychic"
+			],
+			"languages": [
+				"Undercommon"
+			],
+			"cr": "5",
+			"trait": [
+				{
+					"name": "Amphibious",
+					"entries": [
+						"The kuo-toa can breathe air and water."
+					]
+				},
+				{
+					"name": "Otherworldly Perception",
+					"entries": [
+						"The kuo-toa can sense the presence of any creature within 30 feet of it that is {@condition invisible} or on the Ethereal Plane. It can pinpoint such a creature that is moving."
+					]
+				},
+				{
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"While in sunlight, the kuo-toa has disadvantage on attack rolls, as well as on Wisdom ({@skill Perception}) checks that rely on sight."
+					]
+				},
+				{
+					"name": "Water Camouflage",
+					"entries": [
+						"Kuo-Toa have advantage on stealth checks made under water."
+					]
+				},
+				{
+					"name": "Linked Telepathy",
+					"entries": [
+						"All cultists of Igthuun can communicate telepathically with each other within 100ft range"
+					]
+				},
+				{
+					"name": "Psychic Shielding",
+					"entries": [
+						"All cultists of Igthuun have immunity to psychic damage and advantage on all Wisdom, Charisma and Intelligence saving throws"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Kuo-Toa Guardian makes two attacks"
+					]
+				},
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}15 ({@damage 1d4 + 4}) piercing damage."
+					]
+				},
+				{
+					"name": "Maul",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}7 ({@damage 2d6 + 4}) damage and if the creature is medium or smaller it must succed on a {@dc 16} Stregth saving throw or be knocked {@condition Prone|XPHB}."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"fluff": {
+				"name": "Kuo-toa",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Kuo-toa are degenerate fishlike humanoids that once inhabited the shores and islands of the surface world. Long ago humans and their ilk drove the kuo-toa underground, where they dwell in madness and everlasting night. Kuo-toa can no longer abide daylight.",
+									{
+										"name": "Mad Slaves",
+										"type": "entries",
+										"entries": [
+											"At the height of the illithid empire, the mind flayers captured kuo-toa by the thousands and forced them into bondage. The kuo-toa were simple creatures, never meant to endure the oppressive mental force the illithids unleashed against them. By the time the mind flayers abandoned them, the prolonged psychic subjugation endured by the kuo-toa had driven them mad.",
+											"Their minds shattered beyond repair, the kuo-toa adopted a religious fervor, inventing gods to protect them against threats. Most notable of these threats are the drow, which have slain the kuo-toa on sight since the days when the two races first met."
+										]
+									},
+									{
+										"name": "God Makers",
+										"type": "entries",
+										"entries": [
+											"Kuo-toa worship gods of their own insane creation, but if enough kuo-toa believe that a god is real, the energy of their collective subconscious can cause that god to manifest as a physical entity. The form a kuo-toa god takes depends on the inspiration for its divine image, and is usually random or nonsensical.",
+											"One of the most revered gods of the kuo-toa is Blibdoolpoolp the Sea Mother, who takes the form of a female human with a crayfish head, a crayfish's claws, and an articulated shell covering her shoulders. Blibdoolpoolp was likely invented by a kuo-toa that improved on a broken human statue by adding the limbs and head of a crustacean. In sudden awe of its handiwork, it then named the resulting form a god.",
+											"Kuo-toa that cross paths with an aboleth often find themselves worshiping it as a god, their madness blinding them to the fact that the aboleth is merely using them for its own nefarious ends."
+										]
+									},
+									{
+										"name": "Theocratic Rulers",
+										"type": "entries",
+										"entries": [
+											"Kuo-toa archpriests are surrounded by fanatical devotees of their faith. The archpriest of a kuo-toa domain demands that all its subjects worship a specific god. An archpriest's mad belief in its god is so fervent that it manifests the powers of a high cleric. The archpriest can also bestow spells to devout underlings called whips. One or more of these whips are also the archpriest's children, and their primary role in kuo-toan society is to fight to the death to claim the throne when the archpriest dies. If a whip displeases the archpriest, the archpriest can strip it of its spellcasting ability, if not its life.",
+											"The archpriest's decrees are enforced by monitors, devout kuo-toa that act as the archpriest's eyes and ears. Monitors are deadly hand-to-hand combatants, and lesser kuo-toa live in fear of them.",
+											"Kuo-toa Gear. Many weapons of the kuo-toa are designed to capture rather than kill. Nets are common, though some carry pincer staffs (also called mancatchers) designed to trap and immobilize foes. Kuo-toa warriors also treat their shields with a sticky goo that catches incoming weapons.",
+											"In general, kuo-toa don't like the weight of armor on their slippery bodies and rely on their natural rubbery hides for protection. However, they like to wear jewelry made from scavenged bones, shells, pearls, gems, and carapace fragments."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Variant: Kuo-toa Monitor",
+										"entries": [
+											"A kuo-toa monitor has a challenge rating of 3 (700 XP). It has the same statistics as a kuo-toa whip except that it adds its Wisdom modifier to its Armor Class (AC 13), loses the Spellcaster trait, and replaces the whip's action options with the following action options.",
+											{
+												"name": "Multiattack",
+												"entries": [
+													"The kuo-toa makes one bite attack and two unarmed strikes."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Bite",
+												"entries": [
+													"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 4 ({@damage 1d4 + 2}) piercing damage."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Unarmed Strike",
+												"entries": [
+													"Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 5 ({@damage 1d6 + 2}) bludgeoning damage + 3 ({@damage 1d6}) lightning damage, and the target can't take reactions until the end of the kuo-toa's next turn."
+												],
+												"type": "entries"
+											}
+										]
+									}
+								]
+							},
+							{
+								"type": "insetReadaloud",
+								"entries": [
+									{
+										"type": "quote",
+										"entries": [
+											"They invent their own gods... the very definition of insanity."
+										],
+										"by": "Sabal Mizzrym of Menzoberranzan"
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Kuo-toa.jpg"
+						}
+					}
+				]
+			},
+			"tokenUrl": "https://5e.tools/img/MM/Kuo-toa.png",
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/kuo-toa.mp3"
+			},
+			"traitTags": [
+				"Amphibious",
+				"Camouflage",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"U"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"save": {
+				"str": "+7",
+				"con": "+6"
+			},
+			"attachedItems": [
+				"maul|phb"
+			],
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Underground Thug",
+			"source": "Jama",
+			"page": 131,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item leather armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"average": 32,
+				"formula": "5d8 + 10"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 11,
+			"con": 14,
+			"int": 10,
+			"wis": 10,
+			"cha": 11,
+			"skill": {
+				"intimidation": "+2"
+			},
+			"passive": 10,
+			"languages": [
+				"Common"
+			],
+			"cr": "1/2",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The thug has advantage on an attack roll against a creature if at least one of the thug's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Sneak Attack",
+					"entries": [
+						"Once per turn the Underground Thug deals an extra {@damage 1d6} attack damage if it has advantage or an ally within 5ft of the target."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The thug makes two melee attacks"
+					]
+				},
+				{
+					"name": "Mace",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 2} to hit, range 100/400 ft., one target. {@h}5 ({@damage 1d6}) piercing damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"mace|phb",
+				"shortbow|phb"
+			],
+			"traitTags": [
+				"Pack Tactics",
+				"Sneak Attack"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"token": {
+				"name": "Zhentarim Thug",
+				"source": "OotA"
+			},
+			"damageTags": [
+				"B",
+				"P"
+			]
+		},
+		{
+			"name": "Thug Captain",
+			"source": "Jama",
+			"page": 131,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item padded armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 18",
+				"average": 60
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 17,
+			"con": 16,
+			"int": 10,
+			"wis": 10,
+			"cha": 11,
+			"skill": {
+				"intimidation": "+2",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Common"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The thug has advantage on an attack roll against a creature if at least one of the thug's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Sneak Attack",
+					"entries": [
+						"Once per turn the Thug  deals an extra {@damage 2d6} attack damage if it has advantage or an ally within 5ft of the target."
+					]
+				},
+				{
+					"name": "Stun (recharges on a 6)",
+					"entries": [
+						"When the thug hits with a weapon attack the target must make a Constitution saving throw or be {@condition stunned} until the start of Thug Captains turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The thug makes three melee attacks."
+					]
+				},
+				{
+					"name": "Mace",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}14 ({@damage 1d6 + 3}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 3} to hit, range 100/400 ft., one target. {@h}7 ({@damage 2d6}) piercing damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"mace|phb",
+				"shortbow|phb"
+			],
+			"traitTags": [
+				"Pack Tactics",
+				"Sneak Attack"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"token": {
+				"name": "Zhentarim Thug",
+				"source": "OotA"
+			},
+			"conditionInflict": [
+				"stunned"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			]
+		},
+		{
+			"name": "Thug Trickster",
+			"source": "Jama",
+			"page": 131,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item padded armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 18",
+				"average": 60
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 17,
+			"con": 16,
+			"int": 10,
+			"wis": 10,
+			"cha": 11,
+			"skill": {
+				"intimidation": "+2",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Common"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The thug has advantage on an attack roll against a creature if at least one of the thug's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Sneak Attack",
+					"entries": [
+						"Once per turn the Thug  deals an extra {@damage 2d6} attack damage if it has advantage or an ally within 5ft of the target."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The thug makes two melee attacks"
+					]
+				},
+				{
+					"name": "Mace",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}14 ({@damage 3d6 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 2} to hit, range 100/400 ft., one target. {@h}7 ({@damage 2d6}) piercing damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"mace|phb",
+				"shortbow|phb"
+			],
+			"traitTags": [
+				"Pack Tactics",
+				"Sneak Attack"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"token": {
+				"name": "Zhentarim Thug",
+				"source": "OotA"
+			},
+			"save": {
+				"dex": "+5",
+				"con": "+5"
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Uses Intelligence"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell mage hand|XPHB}",
+								"{@spell minor illusion|XPHB}"
+							]
+						}
+					},
+					"daily": {
+						"5": [
+							"{@spell invisibility|XPHB}",
+							"{@spell shield|XPHB}",
+							"{@spell thunderclap|XPHB}",
+							"{@spell web|XPHB}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			],
+			"damageTagsSpell": [
+				"F",
+				"T"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity"
+			]
+		},
+		{
+			"name": "Lukka",
+			"source": "Jama",
+			"page": 298,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "undead",
+				"tags": [
+					"shapechanger"
+				]
+			},
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"{@item plate armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "17d8 + 68",
+				"average": 250
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 18,
+			"con": 18,
+			"int": 17,
+			"wis": 15,
+			"cha": 18,
+			"save": {
+				"dex": "+9",
+				"wis": "+7",
+				"cha": "+9",
+				"con": "+9"
+			},
+			"skill": {
+				"perception": "+7",
+				"stealth": "+9"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 17,
+			"resist": [
+				"necrotic",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"languages": [
+				"the languages it knew in life"
+			],
+			"cr": "15",
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"If the vampire isn't in sunlight or running water, it can use its action to polymorph into a Tiny bat or a Medium cloud of mist, or back into its true form.",
+						"While in bat form, the vampire can't speak, its walking speed is 5 feet, and it has a flying speed of 30 feet. Its statistics, other than its size and speed, are unchanged. Anything it is wearing transforms with it, but nothing it is carrying does. It reverts to its true form if it dies.",
+						"While in mist form, the vampire can't take any actions, speak, or manipulate objects. It is weightless, has a flying speed of 20 feet, can hover, and can enter a hostile creature's space and stop there. In addition, if air can pass through a space, the mist can do so without squeezing, and it can't pass through water. It has advantage on Strength, Dexterity, and Constitution saving throws, and it is immune to all nonmagical damage, except the damage it takes from sunlight."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the vampire fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Misty Escape",
+					"entries": [
+						"When it drops to 0 hit points outside its resting place, the vampire transforms into a cloud of mist (as in the Shapechanger trait) instead of falling {@condition unconscious}, provided that it isn't in sunlight or running water. If it can't transform, it is destroyed.",
+						"While it has 0 hit points in mist form, it can't revert to its vampire form, and it must reach its resting place within 2 hours or be destroyed. Once in its resting place, it reverts to its vampire form. It is then {@condition paralyzed} until it regains at least 1 hit point. After spending 1 hour in its resting place with 0 hit points, it regains 1 hit point."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"The vampire regains 20 hit points at the start of its turn if it has at least 1 hit point and isn't in sunlight or running water. If the vampire takes radiant damage or damage from holy water, this trait doesn't function at the start of the vampire's next turn."
+					]
+				},
+				{
+					"name": "Spider Climb",
+					"entries": [
+						"The vampire can climb difficult surfaces, including upside down on ceilings, without needing to make an ability check."
+					]
+				},
+				{
+					"name": "Vampire Weaknesses",
+					"entries": [
+						"The vampire has the following flaws:",
+						"{@i Forbiddance.} The vampire can't enter a residence without an invitation from one of the occupants.",
+						"{@i Harmed by Running Water.} The vampire takes 20 acid damage if it ends its turn in running water.",
+						"{@i Stake to the Heart.} If a piercing weapon made of wood is driven into the vampire's heart while the vampire is {@condition incapacitated} in its resting place, the vampire is {@condition paralyzed} until the stake is removed.",
+						"{@i Sunlight Hypersensitivity.} The vampire takes 20 radiant damage when it starts its turn in sunlight. While in sunlight, it has disadvantage on attack rolls and ability checks."
+					]
+				},
+				{
+					"name": "Throat Jab (once per turn)",
+					"entries": [
+						"Once per turn when Lukka hits with an unarmed attack, he can force the target to make a {@dc 18} Constitution saving throw or become muted, it can reroll at the end of each of its turn, ending the effect on a success. "
+					]
+				},
+				{
+					"name": "Mage Slayer",
+					"entries": [
+						"When a creature attempts to cast a spell in reach Lukka can make an attack against it as a reaction.",
+						"{@status Concentration|XPHB} spells as a result of Lukkas attacks are made with disadvantage."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The vampire makes two greatsword attacks."
+					]
+				},
+				{
+					"name": "Multiattack (Vampire Form Only)",
+					"entries": [
+						"The vampire makes two attacks, only one of which can be a bite attack."
+					]
+				},
+				{
+					"name": "Unarmed Strike (Vampire Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one creature. {@h}8 ({@damage 1d8 + 5}) bludgeoning damage. Instead of dealing damage, the vampire can grapple the target (escape {@dc 18})."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 5 ft., one creature. {@h}11 ({@damage 2d6 + 5}) slashing damage."
+					]
+				},
+				{
+					"name": "Bite (Bat or Vampire Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one willing creature, or a creature that is {@condition grappled} by the vampire, {@condition incapacitated}, or {@condition restrained}. {@h}7 ({@damage 1d6 + 5}) piercing damage plus 10 ({@damage 4d6}) necrotic damage. The target's hit point maximum is reduced by an amount equal to the necrotic damage taken, and the vampire regains hit points equal to that amount. The reduction lasts until the target finishes a long rest. The target dies if this effect reduces its hit point maximum to 0. A humanoid slain in this way and then buried in the ground rises the following night as a {@creature vampire spawn} under the vampire's control."
+					]
+				},
+				{
+					"name": "Charm",
+					"entries": [
+						"The vampire targets one humanoid it can see within 30 feet of it. If the target can see the vampire, the target must succeed on a {@dc 17} Wisdom saving throw against this magic or be {@condition charmed} by the vampire. The {@condition charmed} target regards the vampire as a trusted friend to be heeded and protected. Although the target isn't under the vampire's control, it takes the vampire's requests or actions in the most favorable way it can, and it is a willing target for the vampire's bite attack.",
+						"Each time the vampire or the vampire's companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the vampire is destroyed, is on a different plane of existence than the target, or takes a bonus action to end the effect."
+					]
+				},
+				{
+					"name": "Children of the Night (1/Day)",
+					"entries": [
+						"The vampire magically calls {@dice 2d4} swarms of {@creature swarm of bats||bats} or {@creature swarm of rats||rats}, provided that the sun isn't up. While outdoors, the vampire can call {@dice 3d6} {@creature wolf||wolves} instead. The called creatures arrive in {@dice 1d4} rounds, acting as allies of the vampire and obeying its spoken commands. The beasts remain for 1 hour, until the vampire dies, or until the vampire dismisses them as a bonus action."
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Move",
+					"entries": [
+						"The vampire moves up to its speed without provoking opportunity attacks."
+					]
+				},
+				{
+					"name": "Unarmed Strike",
+					"entries": [
+						"The vampire makes one unarmed strike."
+					]
+				},
+				{
+					"name": "Bite (Costs 2 Actions)",
+					"entries": [
+						"The vampire makes one bite attack."
+					]
+				},
+				{
+					"name": "Greatsword",
+					"entries": [
+						"Lukka makes one Greatsword attack."
+					]
+				}
+			],
+			"legendaryGroup": {
+				"name": "Vampire",
+				"source": "MM"
+			},
+			"environment": [
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/vampire-warrior.mp3"
+			},
+			"attachedItems": [
+				"greatsword|phb"
+			],
+			"traitTags": [
+				"Legendary Resistances",
+				"Regeneration",
+				"Shapechanger",
+				"Spider Climb",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"LF"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"HPR"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Vampire Warrior",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Vampire Warrior",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Awakened to an endless night, vampires hunger for the life they have lost and sate that hunger by drinking the blood of the living. Vampires abhor sunlight, for its touch burns them. They never cast shadows or reflections, and any vampire wishing to move unnoticed among the living keeps to the darkness and far from reflective surfaces.",
+									{
+										"name": "Dark Desires",
+										"type": "entries",
+										"entries": [
+											"Whether or not a vampire retains any memories from its former life, its emotional attachments wither as once-pure feelings become twisted by undeath. Love turns into hungry obsession, while friendship becomes bitter jealousy. In place of emotion, vampires pursue physical symbols of what they crave, so that a vampire seeking love might fixate on a young beauty. A child might become an object of fascination for a vampire obsessed with youth and potential. Others surround themselves with art, books, or sinister items such as torture devices or trophies from creatures they have killed."
+										]
+									},
+									{
+										"name": "Born from Death",
+										"type": "entries",
+										"entries": [
+											"Most of a vampire's victims become vampire spawn-ravenous creatures with a vampire's hunger for blood, but under the control of the vampire that created them. If a true vampire allows a spawn to draw blood from its own body, the spawn transforms into a true vampire no longer under its master's control. Few vampires are willing to relinquish their control in this manner. Vampire spawn become free-willed when their creator dies."
+										]
+									},
+									{
+										"name": "Chained to the Grave",
+										"type": "entries",
+										"entries": [
+											"Every vampire remains bound to its coffin, crypt, or grave site, where it must rest by day. If a vampire didn't receive a formal burial, it must lie beneath a foot of earth at the place of its transition to undeath. A vampire can move its place of burial by transporting its coffin or a significant amount of grave dirt to another location. Some vampires set up multiple resting places this way."
+										]
+									},
+									{
+										"name": "Undead Nature",
+										"type": "entries",
+										"entries": [
+											"Neither a vampire nor a vampire spawn requires air."
+										]
+									},
+									{
+										"type": "entries",
+										"name": "A Vampire's Lair",
+										"entries": [
+											"A vampire chooses a grand yet defensible location for its lair, such as a castle, fortified manor, or walled abbey. It hides its coffin in an underground crypt or vault guarded by vampire spawn or other loyal creatures of the night.",
+											"The region surrounding a vampire's lair is warped by the creature's unnatural presence, creating any of the following effects:",
+											{
+												"type": "list",
+												"items": [
+													"There's a noticeable increase in the populations of bats, rats, and wolves in the region.",
+													"Plants within 500 feet of the lair wither, and their stems and branches become twisted and thorny.",
+													"Shadows cast within 500 feet of the lair seem abnormally gaunt and sometimes move as though alive.",
+													"A creeping fog clings to the ground within 500 feet of the vampire's lair. The fog occasionally takes eerie forms, such as grasping claws and writhing serpents."
+												]
+											},
+											"If the vampire is destroyed, these effects end after {@dice 2d6} days."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Player Characters as Vampires",
+										"entries": [
+											"The game statistics of a player character transformed into a vampire spawn and then a vampire don't change, except that the character's Strength, Dexterity, and Constitution scores become 18 if they aren't higher. In addition, the character gains the vampire's damage resistances, {@sense darkvision}, traits, and actions. Attack and damage rolls for the vampire's attacks are based on Strength.",
+											"The save DC for Charm is 8 + the vampire's proficiency bonus + the vampire's Charisma modifier. The character's alignment becomes lawful evil, and the DM might take control of the character until the vampirism is reversed with a {@spell wish} spell or the character is killed and brought back to life."
+										]
+									},
+									{
+										"type": "inset",
+										"name": "Strahd von Zarovich",
+										"entries": [
+											"A brilliant thinker and capable warrior in life, Strahd von Zarovich fought in countless battles for his people. When war and killing finally stripped him of his youth and strength, he settled in the remote valley of Barovia and built a castle on a towering pinnacle, from which he could survey his lands. His brother Sergei came to live with him in Castle Ravenloft, becoming Strahd's adviser and constant companion.",
+											"In his brother, Strahd saw everything he had lost. Sergei was handsome and young, while Strahd had become old and scarred. Resentment colored their relationship, eventually turning into hatred. Strahd's beloved, Tatyana, spurned him for Sergei, whom she pledged to marry.",
+											"In a desperate attempt to win Tatyana's heart, Strahd forged a pact with dark powers that made him immortal. At the wedding of Sergei and Tatyana, he confronted his brother and killed him. Tatyana fled and flung herself from Ravenloft's walls. Strahd's guards, seeing him for a monster, shot him with arrows. But he did not die. He became a vampire-the first vampire, according to many sages.",
+											"In the centuries since his transformation, Strahd's lust for life and youth have only grown. He broods in his dark castle, cursing the living for stealing away what he lost, and never admitting his hand in the tragedy he created."
+										]
+									},
+									{
+										"type": "insetReadaloud",
+										"entries": [
+											{
+												"type": "quote",
+												"entries": [
+													"I am The Ancient, I am The Land. My beginnings are lost in the darkness of the past. I was the warrior, I was good and just. I thundered across the land like the wrath of a just god, but the war years and the killing years wore down my soul as the wind wears down stone into sand."
+												],
+												"by": "Count Strahd von Zarovich"
+											}
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Vampire.webp"
+						}
+					}
+				]
+			},
+			"damageTags": [
+				"B",
+				"N",
+				"P",
+				"S"
+			],
+			"savingThrowForced": [
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Alexandra",
+			"source": "Jama",
+			"page": 102,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"cleric",
+					"elf"
+				]
+			},
+			"alignment": [
+				"N",
+				"E"
+			],
+			"alignmentPrefix": "Typically ",
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"drow armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "23d8 + 46",
+				"average": 200
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 20,
+			"con": 14,
+			"int": 18,
+			"wis": 14,
+			"cha": 16,
+			"save": {
+				"con": "+7",
+				"int": "+9",
+				"dex": "+10",
+				"wis": "+7"
+			},
+			"skill": {
+				"insight": "+10",
+				"perception": "+10",
+				"religion": "+9",
+				"stealth": "+7"
+			},
+			"senses": [
+				"darkvision 120 ft."
+			],
+			"passive": 20,
+			"conditionImmune": [],
+			"languages": [
+				"Elvish",
+				"Undercommon"
+			],
+			"cr": "14",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The Alexandra casts one of the following spells, requiring no material components and using Intelligence as the spellcasting ability (spell save {@dc 17}):"
+					],
+					"will": [
+						"{@spell dancing lights}",
+						"{@spell detect magic}",
+						"{@spell message}",
+						"{@spell thaumaturgy}"
+					],
+					"daily": {
+						"6": [
+							"{@spell clairvoyance}",
+							"{@spell darkness}",
+							"{@spell detect thoughts}",
+							"{@spell dispel magic}",
+							"{@spell hypnotic pattern}",
+							"{@spell invisibility|XPHB}",
+							"{@spell misty step|XPHB}",
+							"{@spell silence}",
+							"{@spell suggestion}"
+						]
+					},
+					"ability": "int",
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"Alexandra has advantage on saving throws against being {@condition charmed}, and magic can't put the drow to sleep."
+					]
+				},
+				{
+					"name": "Sneak Attack",
+					"entries": [
+						"Once per turn, the alexandra deals an extra 14 ({@damage 6d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the alexandra that isn't {@condition incapacitated} and the alexandra doesn't have disadvantage on the attack roll."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Alexandra makes three Dagger attacks."
+					]
+				},
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d4 + 5}) piercing damage."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Spectral Dagger (Recharges after a Short or Long Rest)",
+					"entries": [
+						"Alexandra conjures a floating, spectral dagger within 60 feet of itself. The drow can make a melee spell attack ({@hit 10} to hit) against one creature within 5 feet of the dagger. On a hit, the target takes 9 ({@damage 1d8 + 5}) force damage.",
+						"The dagger lasts for 1 minute. As a bonus action on later turns, the drow can move the dagger up to 20 feet and repeat the attack against one creature within 5 feet of the dagger."
+					]
+				}
+			],
+			"environment": [
+				"underdark"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/drow-inquisitor.mp3"
+			},
+			"traitTags": [
+				"Fey Ancestry",
+				"Sneak Attack",
+				"Sunlight Sensitivity"
+			],
+			"senseTags": [
+				"SD"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"E",
+				"U"
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"conditionInflictSpell": [
+				"deafened"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Drow Inquisitor",
+				"source": "MPMM"
+			},
+			"fluff": {
+				"name": "Drow Inquisitor",
+				"source": "MPMM",
+				"entries": [
+					"Lolth's worshipers expect treachery—the Spider Queen encourages it, after all. A certain amount of backstabbing and double-crossing can be managed, but too much can undermine an entire community. To keep some semblance of order and to root out traitors, priestesses of Lolth employ inquisitors. Inquisitors are chosen from the ranks of the priesthood, and their authority is equaled only by that of the {@creature drow matron mother|MPMM|drow matron mothers} (also in this book) of the noble houses. Anyone they decide is at odds with the hierarchy faces painful interrogation and usually an excruciating death."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MPMM/Drow Inquisitor.webp"
+						},
+						"credit": "Nikki Dawes"
+					}
+				]
+			},
+			"attachedItems": [
+				"dagger|phb"
+			],
+			"damageTags": [
+				"O",
+				"P"
+			],
+			"savingThrowForcedSpell": [
+				"wisdom"
+			]
+		},
+		{
+			"name": "Thug Commander",
+			"source": "Jama",
+			"page": 131,
+			"size": [
+				"M"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"human"
+				]
+			},
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"{@item padded armor|phb}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 18",
+				"average": 90
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 17,
+			"con": 16,
+			"int": 10,
+			"wis": 10,
+			"cha": 11,
+			"skill": {
+				"intimidation": "+2",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Common"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Pack Tactics",
+					"entries": [
+						"The thug has advantage on an attack roll against a creature if at least one of the thug's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+					]
+				},
+				{
+					"name": "Sneak Attack",
+					"entries": [
+						"Once per turn the Thug  deals an extra {@damage 3d6} attack damage if it has advantage or an ally within 5ft of the target."
+					]
+				},
+				{
+					"name": "Stun (recharges on a 6)",
+					"entries": [
+						"When the thug hits with a weapon attack the target must make a Constitution saving throw or be {@condition stunned} until the start of Thug Captains turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The thug makes three melee attacks."
+					]
+				},
+				{
+					"name": "Mace",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}14 ({@damage 3d6 + 4}) bludgeoning damage."
+					]
+				},
+				{
+					"name": "Shortbow",
+					"entries": [
+						"{@atk rw} {@hit 2} to hit, range 100/400 ft., one target. {@h}7 ({@damage 2d6}) piercing damage."
+					]
+				}
+			],
+			"attachedItems": [
+				"mace|phb",
+				"shortbow|phb"
+			],
+			"traitTags": [
+				"Pack Tactics",
+				"Sneak Attack"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RW",
+				"RNG"
+			],
+			"token": {
+				"name": "Zhentarim Thug",
+				"source": "OotA"
+			},
+			"conditionInflict": [
+				"stunned"
+			],
+			"damageTags": [
+				"B",
+				"P"
+			]
+		},
+		{
+			"name": "Pike Trickfoot",
+			"shortName": "Pike",
+			"alias": [
+				"Champion of Sarenrae"
+			],
+			"group": [
+				"Vox Machina"
+			],
+			"isNamedCreature": true,
+			"source": "Jama",
+			"page": 269,
+			"size": [
+				"S"
+			],
+			"type": {
+				"type": "humanoid",
+				"tags": [
+					"gnome"
+				]
+			},
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"wisdom + dexterity",
+						"{@item shield|PHB}"
+					]
+				}
+			],
+			"hp": {
+				"average": 170,
+				"formula": "20d8 + 80"
+			},
+			"speed": {
+				"walk": 25
+			},
+			"str": 19,
+			"dex": 16,
+			"con": 18,
+			"int": 14,
+			"wis": 20,
+			"cha": 14,
+			"save": {
+				"wis": "+11",
+				"cha": "+8"
+			},
+			"skill": {
+				"athletics": "+10",
+				"perception": "+11",
+				"persuasion": "+8",
+				"religion": "+8",
+				"stealth": "+7",
+				"acrobatics": "+0"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 21,
+			"resist": [
+				"fire",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"conditionImmune": [
+				"frightened"
+			],
+			"languages": [
+				"Common",
+				"Dwarvish",
+				"Gnomish",
+				"Undercommon"
+			],
+			"cr": "17",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Pike is a 20th-level spellcaster. Her spellcasting ability is Wisdom (spell save {@dc 19}, {@hit 11} to hit with spell attacks). She has the following cleric spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell light}",
+								"{@spell sacred flame} ({@dice 4d8})",
+								"{@spell spare the dying}",
+								"{@spell thaumaturgy}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell command}",
+								"{@spell cure wounds}",
+								"{@spell guiding bolt}",
+								"{@spell healing word}",
+								"{@spell sanctuary}",
+								"{@spell shield of faith}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell aid}",
+								"{@spell lesser restoration}",
+								"{@spell spiritual weapon}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell glyph of warding}",
+								"{@spell mass healing word}",
+								"{@spell protection from energy}",
+								"{@spell revivify}",
+								"{@spell speak with dead}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell death ward}",
+								"{@spell freedom of movement}",
+								"{@spell guardian of faith}"
+							]
+						},
+						"5": {
+							"slots": 3,
+							"spells": [
+								"{@spell flame strike}",
+								"{@spell greater restoration}",
+								"{@spell hallow}",
+								"{@spell mass cure wounds}",
+								"{@spell scrying}"
+							]
+						},
+						"6": {
+							"slots": 2,
+							"spells": [
+								"{@spell heal}",
+								"{@spell heroes' feast}",
+								"{@spell planar ally}"
+							]
+						},
+						"7": {
+							"slots": 2,
+							"spells": [
+								"{@spell resurrection}"
+							]
+						},
+						"8": {
+							"slots": 1,
+							"spells": [
+								"{@spell holy aura}"
+							]
+						},
+						"9": {
+							"slots": 1,
+							"spells": [
+								"{@spell mass heal}"
+							]
+						}
+					},
+					"ability": "wis"
+				}
+			],
+			"trait": [
+				{
+					"name": "Gnome Cunning",
+					"entries": [
+						"Pike has {@quickref Advantage and Disadvantage|PHB|2|0|advantage} on Intelligence, Wisdom, and Charisma {@quickref saving throws|PHB|2|1} against magic."
+					]
+				},
+				{
+					"name": "Special Equipment",
+					"entries": [
+						"Pike wields a {@item mace of disruption} and wears {@item gauntlets of ogre power}, {@item boots of speed}, and the {@item plate of the dawnmartyr (exalted)|TDCSR|Plate of the Dawnmartyr}."
+					]
+				},
+				{
+					"name": "Dawnmartyr's Grace (1/{@quickref resting|PHB|2|0|Long Rest})",
+					"entries": [
+						"When Pike is reduced to 0 hit points while wearing the {@item plate of the dawnmartyr (exalted)|TDCSR|Plate of the Dawnmartyr}, she can choose to have a blast of healing flame surround her. She regains 1 hit point and is lifted to her feet. Each enemy within 10 feet of her takes 7 ({@damage 2d6}) fire damage or radiant damage (her choice)."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Mace of Disruption",
+					"entries": [
+						"{@atk mw} {@hit 10} to hit, reach 5 ft., one target. {@h}17 ({@damage 3d8 + 4}) bludgeoning damage, plus an extra 7 ({@damage 2d6}) radiant damage if the target is a fiend or an undead. If the target has 25 hit points or fewer after taking this damage, it must succeed on a {@dc 15} Wisdom {@quickref saving throws|PHB|2|1|saving throw} or be destroyed. On a successful save, the creature becomes {@condition frightened} of Pike until the end of her next turn."
+					]
+				},
+				{
+					"name": "Guiding Bolt (5th Level)",
+					"entries": [
+						"{@atk rs} {@hit 11} to hit, range 120 ft., one target. {@h}28 ({@damage 8d6}) radiant damage, and the next attack roll made against the target before the end of Pike's next turn has {@quickref Advantage and Disadvantage|PHB|2|0|advantage}."
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "Battle Priest (5/{@quickref resting|PHB|2|0|Long Rest})",
+					"entries": [
+						"If Pike uses the {@action Attack} action, she can make one weapon attack as a bonus action."
+					]
+				},
+				{
+					"name": "{@spell Healing Word} (4th Level)",
+					"entries": [
+						"Pike casts {@spell healing word}, restoring 16 ({@dice 4d4 + 6}) hit points to herself or another creature she can see within 60 feet of her."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Dawnmartyr's Rebuke",
+					"entries": [
+						"When a creature within 5 feet of Pike hits her with a melee attack, she can deal 7 ({@damage 2d6}) fire or radiant damage to it (her choice)."
+					]
+				},
+				{
+					"name": "Everlight's Guidance (3/{@quickref resting|PHB|2|0|Short Rest})",
+					"entries": [
+						"When Pike or a creature she can see within 30 feet of her makes an attack roll, she can grant a +10 bonus to the roll. She can grant this bonus after the roll is made but before it hits or misses."
+					]
+				}
+			],
+			"attachedItems": [
+				"mace of disruption|dmg"
+			],
+			"senseTags": [
+				"D"
+			],
+			"languageTags": [
+				"C",
+				"D",
+				"G",
+				"U"
+			],
+			"spellcastingTags": [
+				"CC"
+			],
+			"miscTags": [
+				"MW",
+				"MLW",
+				"RA"
+			],
+			"conditionInflict": [
+				"frightened"
+			],
+			"conditionInflictSpell": [
+				"blinded",
+				"prone"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Pike Trickfoot",
+				"source": "TDCSR"
+			},
+			"fluff": {
+				"name": "Pike Trickfoot",
+				"source": "TDCSR",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/TDCSR/PikeFluff.webp"
+						},
+						"credit": "{@link Jonah Baumann|https://galacticjonah.com/}",
+						"altText": "A portrait of Pike: A white gnomish woman with long, braided white hair and blue eyes. She wears a blue dress covered by a woven red shawl. She smiles, holding a golden symbol of the Everlight, a red ruby inset at its top."
+					}
+				],
+				"entries": [
+					{
+						"type": "entries",
+						"name": "Vox Machina",
+						"page": 260,
+						"entries": [
+							"Heroes. Scoundrels. Legends. Dumbasses. The legacy of the adventuring party Vox Machina is a complicated one. Over the course of their adventures, they've selflessly saved the lives of thousands of people in Tal'Dorei, {@book Wildemount|TDCSR|3|Wildemount}, {@book Issylra|TDCSR|3|Issylra}, and beyond. Of course, there are also countless tales of individuals they've bullied, threatened, insulted, or otherwise needlessly antagonized throughout those same adventures. These legendary figures grew from a band of dime-a-dozen sellswords in the swamp burgh of {@book Stilben|TDCSR|3|Stilben} to gods-blessed warriors whose actions might have saved all of Exandria from a future of undead tyranny.",
+							"The deeds of Vox Machina are sung by bards across Tal'Dorei, often exaggerating those already belief-defying tales of gods and monsters and magic. But though their legend has grown wild and unruly, the members of Vox Machina are still people. More than twenty years have passed since their last great campaign. Most of them are still alive, and the lives of these heroes have changed—in big ways and in smaller, more subtle ones.",
+							"Those among them who age have softer bodies and lines on their faces. Those among them who don't age still show the weight of the world upon their shoulders. By and large, the members of Vox Machina have set aside weapons, armor, and spells in favor of more subtle ways of helping others. Some lead the lands they were born to lead. Others have been elected to the {@book Tal'Dorei Council|TDCSR|2|Tal'Dorei Council}, shaping the fate of the continent's people with quiet wisdom rather than blades and battle cries.",
+							"Still, each member of this legendary band of adventurers would take up arms again in an instant if it meant protecting those they care for the most. And the {@table Vestiges of Divergence by Advancement|TDCSR|Vestiges of Divergence}, whose power they unlocked in the battles against the {@book Cinder King|TDCSR|1|Thordak, the Cinder King} and {@deity The Whispered One|Exandria|TDCSR}, are still within their grasp.",
+							"The following stat blocks are here for GMs to use if their players encounter a member of Vox Machina—hopefully as an ally or a \"quest giver,\" for woe betide anyone who encounters these legendary heroes as a foe. These statistics don't represent the full extent of the characters' abilities as 20th-level adventurers, but have been streamlined to make them easier for the Game Master to run."
+						]
+					},
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"name": "Pike Trickfoot",
+								"page": 268,
+								"entries": [
+									"This little gnome from the {@book Bramblewood|TDCSR|3|The Bramblewood} has been called many things—dragonslayer, savior of Exandria, champion of the {@deity The Everlight|Exandria|TDCSR|Everlight}, Monstah, and, more recently, Mom. But Pike doesn't care much what people call her, as long as it's said with love. Her soul befits the mantle of the {@deity The Everlight|Exandria|TDCSR|Everlight} well, as she exudes warmth, calm, and comfort. But all that cozy kindness shelters a fiery, rebellious spark that can shock strangers and inspire raucous cheers and peals of laughter from her friends.",
+									{
+										"type": "entries",
+										"name": "After the Epilogue",
+										"page": 268,
+										"entries": [
+											"Pike ultimately returned {@creature Scanlan Shorthalt|TDCSR|Scanlan Shorthalt's} romantic interest after {@deity The Whispered One|Exandria|TDCSR} was defeated and Exandria saved once more. There was no denying that she loved him, and they settled down in {@book Westruun|TDCSR|3|Westruun} and had two children within a year of one another, Juniper and Wilhand'ildan (Juni and Wax for short). When the kids went off to school (one to seminary, the other to {@book Westhall Academy in Westruun|TDCSR|3|2. Westhall Academy}), Pike and {@creature Scanlan Shorthalt|TDCSR|Scanlan} decided to call it quits, with sad smiles and promises to always be the best of friends. And they've since kept that promise, even as the two of them each sought new paths in life.",
+											"Missing her found family, Pike moved to {@book Whitestone|TDCSR|3|Whitestone} and built a temple to the {@deity The Everlight|Exandria|TDCSR|Everlight} in the city's Temple Ward. It's beautiful, small, and cozy—a true work of art down to the smallest details. Folk can find her there most days, tending to the gardens but always ready to lend a helping hand or a prayer. Many mornings, Pike swings by the {@book Slayer's Cake|TDCSR|3|8. Slayer's Cake Bakery} to make sure the baked goods remain as tasty as their reputation demands. She'll grab some fresh pastries and coffee to go, and maybe drop off a delivery at Kiki's—that is, Keyleth's—house.",
+											"{@creature Scanlan Shorthalt|TDCSR|Scanlan} usually comes by {@book Whitestone|TDCSR|3|Whitestone} in the summer, his and Pike's favorite time of year. This is a time for simple pleasures—eating dinners with the kids and their {@creature Keyleth, Voice of the Tempest|TDCSR|Auntie Kiki}, {@creature Vex'ahlia|TDCSR|Auntie Vex}, {@creature Grog Strongjaw|TDCSR|Uncle Grog}, and {@creature Percival de Rolo|TDCSR|Uncle Percy}; playing music by the fire; hearing Wilhand'ildan and young Vax'ildan de Rolo joke in private about their names and their weird family; and reminiscing about times past. And sometimes, Pike and {@creature Scanlan Shorthalt|TDCSR|Scanlan} even wind up in bed together, though also, sometimes not. Though Pike's path has diverged from {@creature Scanlan Shorthalt|TDCSR|Scanlan's} in one way, their lives are never truly separated—a thing that could be said of everyone in Vox Machina."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			},
+			"damageTags": [
+				"B",
+				"F",
+				"R"
+			],
+			"damageTagsSpell": [
+				"A",
+				"C",
+				"F",
+				"L",
+				"O",
+				"R",
+				"T"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"constitution",
+				"dexterity",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Mirko Zemětřas",
+			"size": [
+				"M"
+			],
+			"type": "humanoid",
+			"source": "Jama",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 19,
+					"from": [
+						"Icy heavy armor + shield"
+					]
+				}
+			],
+			"hp": {
+				"formula": "7d10 + 35",
+				"average": 73
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 22,
+			"dex": 12,
+			"con": 20,
+			"int": 10,
+			"wis": 10,
+			"cha": 14,
+			"passive": 13,
+			"cr": "5",
+			"skill": {
+				"athletics": "+10",
+				"intimidation": "+8",
+				"perception": "+3"
+			},
+			"save": {
+				"str": "+9",
+				"con": "+8"
+			},
+			"immune": [
+				"cold"
+			],
+			"resist": [
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical sources",
+					"cond": true
+				},
+				{
+					"resist": []
+				}
+			],
+			"conditionImmune": [
+				"charmed",
+				"frightened"
+			],
+			"trait": [
+				{
+					"name": "Cultist of Aseroth - Cold Blooded",
+					"entries": [
+						"Mirko is immute to being {@condition frightened}, {@condition charmed} and has immunity to Cold damage."
+					]
+				},
+				{
+					"name": "Heavy",
+					"entries": [
+						"Mirko has advantage on saves and checks for effects that would knock it {@condition prone}, cant be moved when {@condition grappled} and has disadvantage on climbing checks."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multi attack",
+					"entries": [
+						"Mirko makes two greatsword attacks"
+					]
+				},
+				{
+					"name": "Greatsword of despair",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d8 + 4}) slashing damage, plus 5 ({@damage 1d10}) cold damage."
+					]
+				},
+				{
+					"name": "Chill to the bone",
+					"entries": [
+						"Target creature within 60ft makes a DC18 Constituion save or recieves {@damage 5d10} cold damage and have their speed half until the end of their next turn, the target suffers no effects on a succesful save."
+					]
+				},
+				{
+					"name": "Proclaim despair (once per day)",
+					"entries": [
+						"The warrior makes a confession of utter despair, all creatures that can hear and understand it within 30ft must make a DC18 Wisdom saving throw or have their speed reduced to zero and become {@condition incapacitated} until the end of their next turn."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"MLW"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"The warrior is granted spellcasting abilities from their patron.",
+						"DC = 13, attack bonus +5"
+					],
+					"daily": {
+						"1e": [
+							"{@spell fear}",
+							"{@spell rime's binding ice|FTD}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"legendaryActions": 3,
+			"damageTags": [
+				"C",
+				"S"
+			],
+			"damageTagsSpell": [
+				"C"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"wisdom"
+			]
+		},
+		{
+			"name": "Kuuchaaggum (Tentacle Blob form)",
+			"size": [
+				"G"
+			],
+			"type": "aberration",
+			"source": "Jama",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "20d10 + 120",
+				"average": 200
+			},
+			"speed": {
+				"walk": 0
+			},
+			"str": 22,
+			"dex": 8,
+			"con": 22,
+			"int": 12,
+			"wis": 20,
+			"cha": 10,
+			"passive": 15,
+			"cr": "15",
+			"trait": [
+				{
+					"name": "Legendary Resistance (1/Form)",
+					"entries": [
+						"If Kuuchaaggum fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"save": {
+				"wis": "+10",
+				"int": "+6"
+			},
+			"vulnerable": [
+				"lightning"
+			],
+			"resist": [
+				"acid",
+				"fire",
+				"piercing"
+			],
+			"immune": [
+				"poison"
+			],
+			"mythicHeader": [
+				"Lair actions"
+			],
+			"mythic": [
+				{
+					"name": "Spawn thornies",
+					"entries": [
+						"The roots open and 4 rotten thornies come out. "
+					]
+				},
+				{
+					"name": "Spawn exploding thornies",
+					"entries": [
+						"The roots open and 4 rotten exploding thornies come out."
+					]
+				},
+				{
+					"name": "Necrotic spore emmision",
+					"entries": [
+						"Each creature within the area must make a {@dc 18} Constitution save or take 11 ({@damage 2d10}) necrotic damage and becomes {@condition blinded} until end of its next turn a creature takes half damage on a success."
+					]
+				},
+				{
+					"name": "Poison spore emmision",
+					"entries": [
+						"Each creature within the area must make a {@dc 18} Constitution save or take 11 ({@damage 3d6}) poison damage and become {@condition Poisoned|XPHB} a creature takes half damage on a success."
+					]
+				}
+			],
+			"legendaryActions": 1,
+			"isNamedCreature": true,
+			"legendary": [
+				{
+					"name": "Swipe",
+					"entries": [
+						"Kuuchaaggum swipes one of it's tentacles each creature between the the tentacles next to the used one, must make a {@dc 18} Dexterity save or take 27 ({@damage 6d8}) bludgeoning damage and be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Slam",
+					"entries": [
+						"Kuuchaaggum slams itself on the ground, any creature within 10ft takes {@damage 2d10} thunder damage and must suceced on a DC18 Constitution saving throw or be {@condition stunned} until the end of its next turn. "
+					]
+				}
+			],
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"conditionInflict": [
+				"blinded",
+				"grappled",
+				"poisoned",
+				"prone"
+			],
+			"action": [
+				{
+					"name": "Tentacle grab",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 30 ft., one target. {@h}13 ({@damage 2d6 + 6}) bludgeoning damage, plus 9 ({@damage 2d8}) necrotic damage, if the target is medium or smaller its {@condition grappled}."
+					]
+				},
+				{
+					"name": "Throw",
+					"entries": [
+						"Kuuchaaggum throws a creature its grappling if he targets a creature the creature must make a DC18 dexterity saving throw or take {@damage 6d6} bludgeoning damage, the thrown creature takes {@damage 6d6} bludgeoning damage and is no longer {@condition grappled}"
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH"
+			],
+			"actionHeader": [
+				"Kuuchaagum makes 2 grabs, if its already grappling a creature it can throw it instead. "
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"N"
+			]
+		},
+		{
+			"name": "Exploding Rotting Thorny",
+			"source": "Jama",
+			"page": 197,
+			"size": [
+				"M"
+			],
+			"type": "plant",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 11,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"formula": "3d8 + 3",
+				"average": 16
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 13,
+			"dex": 12,
+			"con": 13,
+			"int": 2,
+			"wis": 10,
+			"cha": 6,
+			"skill": {
+				"perception": "+4",
+				"stealth": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"resist": [],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Plant Camouflage",
+					"entries": [
+						"The thorny has advantage on Dexterity ({@skill Stealth}) checks it makes in any terrain with ample obscuring plant life."
+					]
+				},
+				{
+					"name": "Acid Filled",
+					"entries": [
+						"When exploding rotting thorny dies, every craeture within 10ft of it must make a DC12 Dexterity saving throw or take {@damage 2d10} acid damage. "
+					]
+				},
+				{
+					"name": "Rotten Fortitude",
+					"entries": [
+						"If damage reduces the thorny to 0 hit points, it must make a Constitution saving throw with a DC of the damage taken, unless the damage is lighting or from a critical hit. On a success, the vegepygmy thorny hunter drops to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 1}) piercing damage  and {@dice 1d6} necrotic."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"swamp"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/thorny.mp3"
+			},
+			"traitTags": [
+				"Camouflage",
+				"Regeneration",
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Thorny",
+				"source": "VGM"
+			},
+			"fluff": {
+				"name": "Thorny",
+				"source": "VGM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Vegepygmies are fungus creatures that live in simple tribal units, hunting for sustenance and spreading the spores from which they reproduce.",
+											{
+												"name": "Primitive Plants",
+												"entries": [
+													"Vegepygmies, also called mold folk or moldies, inhabit dark areas that are warm and wet, so they are most commonly found underground or in dense forests where little sunlight penetrates. A vegepygmy instinctively feels kinship with other plant and fungus creatures, and thus vegepygmy tribes coexist well with creatures such as myconids, shriekers, and violet fungi.",
+													"Although they prefer to eat fresh meat, bone, and blood, vegepygmies can absorb nutrients from soil and many sorts of organic matter, meaning that they rarely go hungry. A vegepygmy can hiss and make other noises by forcing air through its mouth, but it can't speak in a conventional sense. Among themselves, vegepygmies communicate by hissing, gestures, and rhythmic tapping on the body. Vegepygmies build and craft little; any gear they have is acquired from other creatures or built by copying simple construction they have witnessed.",
+													"As a vegepygmy ages, it grows tougher and develops spore clusters on its body. Spore-bearing vegepygmies are deferred to by other vegepygmies, so outsiders refer to such vegepygmies as chiefs. A chief can expel its spores in a burst, infecting nearby creatures. If a creature dies while infected, its corpse produces vegepygmies the same way russet mold does.",
+													"No one knows for sure where russet mold came from. One historical account tells of adventurers in a forbidding mountain range discovering russet mold and vegepygmies in a peculiar metal dungeon full of strange life. Another story says that explorers found russet mold in a crater left by a falling star, with vegepygmies infesting the dense jungle nearby."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Mold Begets Mold",
+												"entries": [
+													"Vegepygmies originate from the remains left behind when a humanoid or a giant is killed by russet mold. One or more vegepygmies emerge from the corpse a day later. If a beast such as a dog or a bear dies from russet mold, the result is a bestial moldie called a thorny result instead of a humanoid-shaped vegepygmy. Thornies are less intelligent than vegepygmies, but have greater size and ferocity, as well as a thorn-covered body."
+												],
+												"type": "entries"
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Russet Mold",
+										"entries": [
+											"The fungus known as russet mold is reddish-brown in color and found only in places that are dark, warm, and wet. Russet mold that spreads out across a metal object can be mistaken for natural rust, and a successful DC 15 Intelligence ({@skill Nature}) or Wisdom ({@skill Survival}) check is required to identify it accurately by sight in such a case.",
+											"Any creature that comes within 5 feet of russet mold must make a DC 13 Constitution saving throw as the mold emits a puff of spores. On a failed save, the creature becomes {@condition poisoned}. While {@condition poisoned} in this way, the creature takes 7 ({@damage 2d6}) poison damage at the start of each of its turns, sprouting mold as it takes damage. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Any magic that neutralizes poison or cures disease kills the infestation. A creature reduced to 0 hit points by the mold's poison damage dies. If the dead creature is a beast, a giant, or a humanoid, one or more newborn vegepygmies emerge from its body 24 hours later: one newborn from a Small corpse, two from a Medium corpse, four from a Large corpse, eight from a Huge corpse, or sixteen from a Gargantuan corpse.",
+											"Russet mold can be hard to kill, since weapons and most types of damage do it no harm. Effects that deal acid, necrotic, or radiant damage kill 1 square foot of russet mold per 1 damage dealt. A pound of salt, a gallon of alcohol, or a magical effect that cures disease kills russet mold in a square area that is 10 feet on a side. Sunlight kills any russet mold in the light's area."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/VGM/Vegepygmy.webp"
+						},
+						"credit": "Jim Nelson"
+					}
+				]
+			},
+			"vulnerable": [
+				"piercing"
+			],
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Kuuchaaggum (Hidden form)",
+			"size": [
+				"G"
+			],
+			"type": "aberration",
+			"source": "Jama",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "20d10 + 120",
+				"average": 120
+			},
+			"speed": {
+				"walk": 0
+			},
+			"str": 22,
+			"dex": 8,
+			"con": 22,
+			"int": 12,
+			"wis": 20,
+			"cha": 10,
+			"passive": 15,
+			"cr": "15",
+			"trait": [
+				{
+					"name": "Legendary Resistance (1/Form)",
+					"entries": [
+						"If Kuuchaaggum fails a saving throw, it can choose to succeed instead."
+					]
+				},
+				{
+					"name": "Hidden body",
+					"entries": [
+						"Kuuchaaggum hides his body in a large construction of mushroom tentacles. His body is protected, but when the spot takes 20 damage, he moves to a different spot. While in this state Kuuchaaggum is immune to all conditions. When Kuuchaggum moves 6 times Kuuchaaggum transforms the heart into a its tentacle blob form"
+					]
+				}
+			],
+			"save": {
+				"wis": "+10",
+				"int": "+6"
+			},
+			"vulnerable": [
+				"lightning"
+			],
+			"resist": [
+				"acid",
+				"fire",
+				"piercing"
+			],
+			"immune": [
+				"poison"
+			],
+			"mythicHeader": [
+				"Lair actions"
+			],
+			"mythic": [
+				{
+					"name": "Spawn thornies",
+					"entries": [
+						"The roots open and 4 rotten thornies come out. "
+					]
+				},
+				{
+					"name": "Spawn exploding thornies",
+					"entries": [
+						"The roots open and 4 rotten exploding thornies come out."
+					]
+				},
+				{
+					"name": "Necrotic spore emmision",
+					"entries": [
+						"Each creature within the area must make a {@dc 18} Constitution save or take 11 ({@damage 2d10}) necrotic damage and becomes {@condition blinded} until end of its next turn a creature takes half damage on a success."
+					]
+				},
+				{
+					"name": "Poison spore emmision",
+					"entries": [
+						"Each creature within the area must make a {@dc 18} Constitution save or take 11 ({@damage 3d6}) poison damage and become {@condition Poisoned|XPHB} a creature takes half damage on a success."
+					]
+				}
+			],
+			"legendaryActions": 1,
+			"isNamedCreature": true,
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"conditionInflict": [
+				"blinded",
+				"poisoned"
+			],
+			"action": [
+				{
+					"name": "Create terrain",
+					"entries": [
+						"Kuuchaagum creates a hazourdous area:",
+						"10x10ft tentacle mushrooms",
+						"2 spitters",
+						"20ft sticky wall shroom",
+						"10x10ft acid {@dice 3d10} acid when enters or starts turn"
+					]
+				}
+			],
+			"legendary": [
+				{
+					"name": "Create terrain",
+					"entries": [
+						"Uses create terrain"
+					]
+				}
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"damageTags": [
+				"I",
+				"N"
+			]
+		},
+		{
+			"name": "Kuuchaaggum (Rot Titan form)",
+			"size": [
+				"H"
+			],
+			"type": "aberration",
+			"source": "Jama",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "20d10 + 120",
+				"average": 120
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 22,
+			"dex": 14,
+			"con": 22,
+			"int": 12,
+			"wis": 20,
+			"cha": 10,
+			"passive": 15,
+			"cr": "15",
+			"trait": [
+				{
+					"name": "Legendary Resistance (1/Form)",
+					"entries": [
+						"If Kuuchaaggum fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"save": {
+				"wis": "+10",
+				"int": "+6"
+			},
+			"vulnerable": [
+				"lightning"
+			],
+			"resist": [
+				"acid",
+				"fire",
+				"piercing"
+			],
+			"immune": [
+				"poison"
+			],
+			"mythicHeader": [
+				"Lair actions"
+			],
+			"mythic": [
+				{
+					"name": "Spawn thornies",
+					"entries": [
+						"The roots open and 4 rotten thornies come out. "
+					]
+				},
+				{
+					"name": "Spawn exploding thornies",
+					"entries": [
+						"The roots open and 4 rotten exploding thornies come out."
+					]
+				},
+				{
+					"name": "Necrotic spore emmision",
+					"entries": [
+						"Each creature within the area must make a {@dc 18} Constitution save or take 11 ({@damage 2d10}) necrotic damage and becomes {@condition blinded} until end of its next turn a creature takes half damage on a success."
+					]
+				},
+				{
+					"name": "Poison spore emmision",
+					"entries": [
+						"Each creature within the area must make a {@dc 18} Constitution save or take 11 ({@damage 3d6}) poison damage and become {@condition Poisoned|XPHB} a creature takes half damage on a success."
+					]
+				}
+			],
+			"legendaryActions": 1,
+			"isNamedCreature": true,
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"conditionInflict": [
+				"blinded",
+				"poisoned",
+				"prone"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned",
+				"unconscious"
+			],
+			"action": [
+				{
+					"name": "Slam",
+					"entries": [
+						"{@atk mw} {@hit 11} to hit, reach 30 ft., one target. {@h}13 ({@damage 2d6 + 6}) bludgeoning damage, plus 9 ({@damage 2d8}) necrotic damage and the creature must succeed on a {@dc 18} Strength save or be knocked {@condition prone}."
+					]
+				},
+				{
+					"name": "Poison dart",
+					"entries": [
+						"{@atk rw} {@hit 7} to hit, range 40/120 ft., one target. {@h}13 ({@damage 2d10 + 2}) piercing damage, plus 7 ({@damage 2d6}) poison damage."
+					]
+				}
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW",
+				"RNG",
+				"THW"
+			],
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Takes one slam or poison dart attack"
+					]
+				},
+				{
+					"name": "Acid spit",
+					"entries": [
+						"Kuuchaagum spits acid in a 40ft line, each creature within the area must make a {@dc 18} Dexterity saving throw or take {@damage 6d4} acid damage and become coated in acid taking {@damage 2d4} acid damage at the start of each of its turns before an action is used to clean the acid. "
+					]
+				}
+			],
+			"damageTags": [
+				"B",
+				"I",
+				"N",
+				"P"
+			],
+			"savingThrowForced": [
+				"dexterity"
+			]
+		},
+		{
+			"name": "Empowered Rotting Thorny",
+			"source": "Jama",
+			"page": 197,
+			"size": [
+				"M"
+			],
+			"type": "plant",
+			"alignment": [
+				"N"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 27,
+				"formula": "5d8 + 5"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 13,
+			"int": 2,
+			"wis": 10,
+			"cha": 6,
+			"skill": {
+				"perception": "+4",
+				"stealth": "+3"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 14,
+			"resist": [
+				"piercing"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Plant Camouflage",
+					"entries": [
+						"The thorny has advantage on Dexterity ({@skill Stealth}) checks it makes in any terrain with ample obscuring plant life."
+					]
+				},
+				{
+					"name": "Thorny Body",
+					"entries": [
+						"At the start of its turn, the thorny deals 2 ({@damage 1d4}) piercing damage to any creature grappling it."
+					]
+				},
+				{
+					"name": "Rotten Fortitude",
+					"entries": [
+						"If damage reduces the thorny to 0 hit points, it must make a Constitution saving throw with a DC of the damage taken, unless the damage is lighting or from a critical hit. On a success, the vegepygmy thorny hunter drops to 1 hit point instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d6 + 3}) piercing damage  and {@dice 1d6} necrotic."
+					]
+				}
+			],
+			"environment": [
+				"forest",
+				"swamp"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/thorny.mp3"
+			},
+			"traitTags": [
+				"Camouflage",
+				"Regeneration",
+				"Undead Fortitude"
+			],
+			"senseTags": [
+				"D"
+			],
+			"miscTags": [
+				"MW"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Thorny",
+				"source": "VGM"
+			},
+			"fluff": {
+				"name": "Thorny",
+				"source": "VGM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Vegepygmies are fungus creatures that live in simple tribal units, hunting for sustenance and spreading the spores from which they reproduce.",
+											{
+												"name": "Primitive Plants",
+												"entries": [
+													"Vegepygmies, also called mold folk or moldies, inhabit dark areas that are warm and wet, so they are most commonly found underground or in dense forests where little sunlight penetrates. A vegepygmy instinctively feels kinship with other plant and fungus creatures, and thus vegepygmy tribes coexist well with creatures such as myconids, shriekers, and violet fungi.",
+													"Although they prefer to eat fresh meat, bone, and blood, vegepygmies can absorb nutrients from soil and many sorts of organic matter, meaning that they rarely go hungry. A vegepygmy can hiss and make other noises by forcing air through its mouth, but it can't speak in a conventional sense. Among themselves, vegepygmies communicate by hissing, gestures, and rhythmic tapping on the body. Vegepygmies build and craft little; any gear they have is acquired from other creatures or built by copying simple construction they have witnessed.",
+													"As a vegepygmy ages, it grows tougher and develops spore clusters on its body. Spore-bearing vegepygmies are deferred to by other vegepygmies, so outsiders refer to such vegepygmies as chiefs. A chief can expel its spores in a burst, infecting nearby creatures. If a creature dies while infected, its corpse produces vegepygmies the same way russet mold does.",
+													"No one knows for sure where russet mold came from. One historical account tells of adventurers in a forbidding mountain range discovering russet mold and vegepygmies in a peculiar metal dungeon full of strange life. Another story says that explorers found russet mold in a crater left by a falling star, with vegepygmies infesting the dense jungle nearby."
+												],
+												"type": "entries"
+											},
+											{
+												"name": "Mold Begets Mold",
+												"entries": [
+													"Vegepygmies originate from the remains left behind when a humanoid or a giant is killed by russet mold. One or more vegepygmies emerge from the corpse a day later. If a beast such as a dog or a bear dies from russet mold, the result is a bestial moldie called a thorny result instead of a humanoid-shaped vegepygmy. Thornies are less intelligent than vegepygmies, but have greater size and ferocity, as well as a thorn-covered body."
+												],
+												"type": "entries"
+											}
+										]
+									},
+									{
+										"type": "entries",
+										"name": "Russet Mold",
+										"entries": [
+											"The fungus known as russet mold is reddish-brown in color and found only in places that are dark, warm, and wet. Russet mold that spreads out across a metal object can be mistaken for natural rust, and a successful DC 15 Intelligence ({@skill Nature}) or Wisdom ({@skill Survival}) check is required to identify it accurately by sight in such a case.",
+											"Any creature that comes within 5 feet of russet mold must make a DC 13 Constitution saving throw as the mold emits a puff of spores. On a failed save, the creature becomes {@condition poisoned}. While {@condition poisoned} in this way, the creature takes 7 ({@damage 2d6}) poison damage at the start of each of its turns, sprouting mold as it takes damage. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. Any magic that neutralizes poison or cures disease kills the infestation. A creature reduced to 0 hit points by the mold's poison damage dies. If the dead creature is a beast, a giant, or a humanoid, one or more newborn vegepygmies emerge from its body 24 hours later: one newborn from a Small corpse, two from a Medium corpse, four from a Large corpse, eight from a Huge corpse, or sixteen from a Gargantuan corpse.",
+											"Russet mold can be hard to kill, since weapons and most types of damage do it no harm. Effects that deal acid, necrotic, or radiant damage kill 1 square foot of russet mold per 1 damage dealt. A pound of salt, a gallon of alcohol, or a magical effect that cures disease kills russet mold in a square area that is 10 feet on a side. Sunlight kills any russet mold in the light's area."
+										]
+									}
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/VGM/Vegepygmy.webp"
+						},
+						"credit": "Jim Nelson"
+					}
+				]
+			},
+			"damageTags": [
+				"P"
+			]
+		},
+		{
+			"name": "Kuuchaaggum (Kuo-Toa form)",
+			"size": [
+				"M"
+			],
+			"type": "aberration",
+			"source": "Jama",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"ac": [
+				15
+			],
+			"hp": {
+				"formula": "10d10 + 20",
+				"average": 80
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 14,
+			"dex": 14,
+			"con": 14,
+			"int": 12,
+			"wis": 20,
+			"cha": 10,
+			"passive": 15,
+			"cr": "15",
+			"trait": [
+				{
+					"name": "Legendary Resistance (1/Form)",
+					"entries": [
+						"If Kuuchaaggum fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"save": {
+				"wis": "+10",
+				"int": "+6"
+			},
+			"vulnerable": [
+				"lightning"
+			],
+			"resist": [
+				"acid",
+				"fire",
+				"piercing"
+			],
+			"immune": [
+				"poison"
+			],
+			"mythicHeader": [
+				"Lair actions"
+			],
+			"mythic": [
+				{
+					"name": "Spawn thornies",
+					"entries": [
+						"The roots open and 4 rotten thornies come out. "
+					]
+				},
+				{
+					"name": "Spawn exploding thornies",
+					"entries": [
+						"The roots open and 4 rotten exploding thornies come out."
+					]
+				},
+				{
+					"name": "Necrotic spore emmision",
+					"entries": [
+						"Each creature within the area must make a {@dc 18} Constitution save or take 11 ({@damage 2d10}) necrotic damage and becomes {@condition blinded} until end of its next turn a creature takes half damage on a success."
+					]
+				},
+				{
+					"name": "Poison spore emmision",
+					"entries": [
+						"Each creature within the area must make a {@dc 18} Constitution save or take 11 ({@damage 3d6}) poison damage and become {@condition Poisoned|XPHB} a creature takes half damage on a success."
+					]
+				}
+			],
+			"legendaryActions": 1,
+			"isNamedCreature": true,
+			"traitTags": [
+				"Legendary Resistances"
+			],
+			"conditionInflict": [
+				"blinded",
+				"poisoned"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"stunned",
+				"unconscious"
+			],
+			"legendary": [
+				{
+					"name": "Reform",
+					"entries": [
+						"Kuuchaagum dissapears and reappears in a spot within 30ft. "
+					]
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"will": [
+						"{@spell entangle}",
+						"{@spell fog cloud}",
+						"{@spell heat metal}",
+						"{@spell hold person|XPHB}"
+					],
+					"rest": {
+						"1e": [
+							"{@spell blight}",
+							"{@spell erupting earth|XGE}",
+							"{@spell insect plague|XPHB}",
+							"{@spell sleet storm}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": [
+				"O"
+			],
+			"action": [
+				{
+					"name": "Rotting bolt",
+					"entries": [
+						"{@atk rw} {@hit 10} to hit, range 100/240 ft., one target. {@h}13 ({@damage 2d10}) acid damage, plus 7 ({@damage 2d6}) poison damage plus 9 ({@damage 2d8}) necrotic damage."
+					]
+				}
+			],
+			"miscTags": [
+				"RW"
+			],
+			"damageTags": [
+				"A",
+				"I",
+				"N"
+			],
+			"damageTagsSpell": [
+				"B",
+				"F",
+				"N",
+				"P"
+			],
+			"savingThrowForcedSpell": [
+				"constitution",
+				"dexterity",
+				"strength",
+				"wisdom"
+			]
+		}
+	]
+}
